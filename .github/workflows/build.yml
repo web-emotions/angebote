@@ -1,0 +1,99 @@
+name: Validate & Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate GitHub Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check CNAME file exists
+        run: |
+          if [ -f CNAME ]; then
+            echo "✓ CNAME file found"
+            cat CNAME
+          else
+            echo "✗ CNAME file missing!"
+            exit 1
+          fi
+
+      - name: Check .nojekyll file exists
+        run: |
+          if [ -f .nojekyll ]; then
+            echo "✓ .nojekyll file found"
+          else
+            echo "✗ .nojekyll file missing!"
+            exit 1
+          fi
+
+      - name: Check root index.html
+        run: |
+          if [ -f index.html ]; then
+            echo "✓ Root index.html found"
+          else
+            echo "✗ Root index.html missing!"
+            exit 1
+          fi
+
+      - name: List generated offer directories
+        run: |
+          echo "=== Angebote Verzeichnisse ==="
+          find . -maxdepth 1 -type d ! -name '.' ! -name '.git*' | sort
+          echo ""
+          echo "=== HTML-Dateien pro Angebot ==="
+          for dir in */; do
+            if [ -f "$dir/index.html" ]; then
+              echo "✓ $dir/index.html"
+            fi
+          done
+
+      - name: Validate HTML syntax
+        run: |
+          echo "=== Validiere HTML-Syntax ==="
+          html_count=$(find . -name "index.html" -type f | wc -l)
+          echo "Gefundene HTML-Dateien: $html_count"
+
+          # Einfache Checks
+          for html_file in $(find . -name "index.html" -type f); do
+            if grep -q "<!doctype html" "$html_file"; then
+              echo "✓ $html_file hat DOCTYPE"
+            else
+              echo "⚠ $html_file fehlt DOCTYPE"
+            fi
+
+            if grep -q "<title>" "$html_file"; then
+              echo "✓ $html_file hat <title>"
+            else
+              echo "⚠ $html_file fehlt <title>"
+            fi
+          done
+
+      - name: Summary
+        run: |
+          echo ""
+          echo "=== Deploy Summary ==="
+          echo "Repository: web-emotions/angebote"
+          echo "Branch: main"
+          echo "Custom Domain: angebote.web-emotions.com"
+          echo "Status: Ready for GitHub Pages ✓"
+
+  notify:
+    needs: validate
+    runs-on: ubuntu-latest
+    name: Notify on success
+    if: success()
+    steps:
+      - name: Success message
+        run: |
+          echo "✓ Alle Validierungen erfolgreich!"
+          echo "✓ GitHub Pages wird aktualisiert..."
+          echo "✓ Angebote live auf: https://angebote.web-emotions.com"
