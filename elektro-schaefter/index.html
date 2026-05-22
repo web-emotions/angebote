@@ -307,6 +307,62 @@ footer a { color: rgba(255,255,255,.7); }
   .roi { padding: var(--space-8) var(--space-6); }
   .hero-cta, .final-cta { flex-direction: column; align-items: stretch; }
 }
+
+/* ─── Paket-Section Styles ─────────────────────────────────────────────────── */
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-10); margin-top: var(--space-16); }
+@media (max-width: 1100px) { .pricing-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; gap: var(--space-8); } }
+
+.pricing-card { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+                padding: var(--space-10); display: flex; flex-direction: column; position: relative;
+                transition: all .3s; box-shadow: var(--shadow); }
+.pricing-card:hover { border-color: var(--color-accent); box-shadow: 0 20px 60px rgba(175,203,5,.12); transform: translateY(-4px); }
+
+.pricing-highlighted { border-color: var(--color-accent); background: linear-gradient(135deg, white 0%, rgba(175,203,5,.03) 100%);
+                       box-shadow: 0 25px 80px rgba(175,203,5,.15); }
+.pricing-highlighted:hover { transform: translateY(-6px); }
+.pricing-badge { position: absolute; top: -12px; left: var(--space-6); background: var(--color-accent);
+                 color: var(--color-black); font-weight: 700; font-size: .72rem; padding: .35rem .85rem;
+                 border-radius: 999px; text-transform: uppercase; letter-spacing: .08em; }
+
+.pricing-header { margin-bottom: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+.pricing-header h3 { margin: 0 0 var(--space-3); }
+.pricing-price { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; line-height: 1;
+                 color: var(--color-accent); margin: var(--space-4) 0 var(--space-2); }
+.pricing-price .netto { font-size: .65em; font-weight: 500; color: var(--color-text-muted); margin-left: var(--space-2); }
+.pricing-pages { margin: 0; font-size: .95rem; color: var(--color-text-muted); }
+
+.pricing-features { flex: 1; margin: var(--space-8) 0; }
+.pricing-features ul { list-style: none; padding: 0; margin: 0; }
+.pricing-features li { display: flex; gap: var(--space-3); margin-bottom: var(--space-3); font-size: .98rem;
+                       line-height: 1.5; color: var(--color-text); align-items: flex-start; }
+.pricing-features li:last-child { margin-bottom: 0; }
+
+.pricing-maintenance { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-6);
+                      margin: var(--space-6) 0; }
+.maintenance-label { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+                    color: var(--color-text-muted); margin-bottom: var(--space-3); }
+.maintenance-option { font-size: .95rem; font-weight: 500; color: var(--color-text); line-height: 1.4;
+                     margin-bottom: var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.maintenance-option:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.maintenance-option small { display: block; font-size: .82rem; color: var(--color-text-muted); font-weight: 400; margin-top: 3px; }
+.maintenance-recommended { background: rgba(175, 203, 5, .08); padding: var(--space-4); border-radius: var(--radius);
+                          border-left: 3px solid var(--color-accent); }
+
+.pricing-card .btn-secondary { background: white; color: var(--color-text); border: 1px solid var(--color-accent);
+                              width: 100%; justify-content: center; margin-top: auto; }
+.pricing-card .btn-secondary:hover { background: var(--color-accent); color: var(--color-black); }
+.pricing-highlighted .btn-primary { width: 100%; justify-content: center; }
+
+.pricing-footer { margin-top: var(--space-16); padding: var(--space-8); background: var(--color-surface);
+                 border-radius: var(--radius-lg); text-align: center; color: var(--color-text-muted); font-size: .95rem; }
+.pricing-footer strong { color: var(--color-text); }
+
+@media (max-width: 680px) {
+  .pricing-card { padding: var(--space-6); }
+  .pricing-header { margin-bottom: var(--space-4); padding-bottom: var(--space-4); }
+  .pricing-price { font-size: 2.2rem; }
+}
 </style>
 </head>
 <body>
@@ -327,9 +383,9 @@ footer a { color: rgba(255,255,255,.7); }
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 20.05.2026</div>
-      <h1>Elektro Schäfter.<br>Stand heute: <em>53 von 100.</em></h1>
-      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Die handwerkliche Erfahrung ist da — aber digital kommt davon gerade wenig an.</p>
+      <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 21.05.2026</div>
+      <h1>Elektro Schäfter Steinheim.<br>Website-Check heute: <em>49 von 100 Punkten.</em></h1>
+      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Mir ist sofort aufgefallen: das Handwerk ist da — aber die Seite arbeitet nicht für Sie.</p>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="#pricing">Investition ansehen <span class="arrow">&rarr;</span></a>
         <a class="btn btn-ghost btn-lg" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20Elektro%20Sch%C3%A4fter.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener">
@@ -345,7 +401,7 @@ footer a { color: rgba(255,255,255,.7); }
     </div>
     <div class="hero-visual">
       <img src="assets/we-mascot-wide.jpg" alt="">
-      <div class="hero-tag"><span class="pulse"></span>Live-Audit · 12 Kategorien geprüft · Score 53/100</div>
+      <div class="hero-tag"><span class="pulse"></span>Live-Audit · 12 Kategorien geprüft · Score 49/100</div>
     </div>
   </div>
 </header>
@@ -364,11 +420,120 @@ footer a { color: rgba(255,255,255,.7); }
           <div class="name">Patrick Rupp · WebEmotions</div>
         </div>
       </div>
-      <p>Beim Reinschauen ist mir sofort aufgefallen: Die Seite von Elektro Schäfter lädt, sie zeigt Leistungen, sie hat eine Adresse. Aber wenn jemand in Steinheim oder Murrhardter Straße gerade einen Elektriker sucht und Ihr Link in WhatsApp oder Facebook landet — da erscheint kein Bild, kein vernünftiger Titel, nichts. Erster Eindruck: leer.</p><p>Das ist kein Kleinkram. Sie haben in der Region vermutlich seit Jahren einen guten Ruf. Aber Suchmaschinen und potenzielle Neukunden sehen eine Seite ohne saubere Überschriften, ohne verschlüsselte Verbindung und ohne die Grundsignale, die Google braucht, um Ihnen lokale Anfragen zuzuspielen. Was da ist, kommt nicht an.</p><p>Ich hab das weiter unten aufgedröselt — konkret, ohne Technik-Kauderwelsch. Wenn irgendwas unklar ist: rufen Sie an oder schreiben mir kurz via WhatsApp. Ich schau mir das gern gemeinsam mit Ihnen an.</p>
+      <p>Beim Reinschauen war das Erste, was mir aufgefallen ist: Die Seite von Elektro Schäfter lädt zwar, aber sie sagt Google und Ihren Besuchern kaum etwas. 21 Wörter Text auf der ganzen Seite — das ist weniger als eine Visitenkarte. Wer in Steinheim oder im Raum Marbach einen Elektriker sucht, findet Sie so nicht.</p><p>Was wirklich da ist: eine Seite ohne Sicherheits-Zertifikat (der Browser warnt manche Besucher aktiv davor), ohne Überschriften-Struktur, die Google lesen kann, und ohne die Basis-Signale, die dafür sorgen, dass Sie bei lokalen Suchanfragen überhaupt mit oben dabei sind. Das ist kein Design-Problem — das sind technische Grundlagen, die fehlen.</p><p>Ich habe das alles weiter unten aufgedröselt, Punkt für Punkt, so verständlich wie möglich. Wenn dabei was unklar ist oder Sie direkt reden wollen: Rufen Sie an oder schreiben mir kurz via WhatsApp.</p>
       <p class="sig">— Patrick</p>
     </div>
   </div>
 </section>
+
+
+
+<!-- NEUE SEKTION: 15 Kategorien mit Gewichtung -->
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Die Analyse</div>
+      <h2>15 Kriterien.<br>Intelligent gewichtet.</h2>
+      <p class="lead">Nicht alle Fehler wiegen gleich. Speed, Mobile, Security und DSGVO machen 52% der Gewichtung aus — weil diese 4 Faktoren entscheiden, ob ein Kunde anruft oder nicht.</p>
+    </div>
+    <div style="display: grid; gap: var(--space-8);">
+      <!-- Kategorien Grid -->
+      <div id="categories-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-6);">
+        <!-- Wird via JavaScript gefüllt aus [{"id": "speed", "name": "Ladegeschwindigkeit", "score": 99, "status": "ok", "text": "Ihre Website braucht zu lange zum Laden. Besucher verlassen die Seite, wenn sie länger als 3 Sekunden dauert."}, {"id": "mobile", "name": "Mobile Optimierung", "score": 60, "status": "warn", "text": "Die Seite sieht auf Smartphones nicht optimal aus oder ist schwer zu bedienen."}, {"id": "seo", "name": "SEO Grundlagen", "score": 18, "status": "bad", "text": "Google findet Ihre Inhalte nicht richtig. Deshalb erscheinen Sie nicht bei relevanten Suchvorgängen."}, {"id": "h1h2", "name": "H1/H2 Struktur", "score": 8, "status": "bad", "text": "Die Seitenstruktur (Überschriften) ist nicht korrekt. Google versteht die Hierarchie nicht."}, {"id": "text", "name": "Textlängen & Qualität", "score": 18, "status": "bad", "text": "Die Texte sind zu kurz oder schwach. Besucher verstehen nicht sofort, was Sie anbieten."}, {"id": "alt", "name": "Alt-Texte & Bilder", "score": 95, "status": "ok", "text": "Bilder haben keine Beschreibungen für Google und Menschen mit Sehbehinderung."}, {"id": "filenames", "name": "Bilddateinamen", "score": 90, "status": "ok", "text": "Bilddateinamen sind unklar. Das ist schlecht für SEO und Barrierefreiheit."}, {"id": "meta", "name": "Meta Tags (Social)", "score": 0, "status": "bad", "text": "Meta-Tags (Vorschaubilder in WhatsApp/Facebook) sind nicht korrekt ausgefüllt."}, {"id": "security", "name": "Sicherheit & Server", "score": 10, "status": "bad", "text": "Es fehlen wichtige Sicherheits-Einstellungen. Das birgt Vertrauensverlust."}, {"id": "caching", "name": "Caching & Infrastruktur", "score": 55, "status": "warn", "text": "Bilder und Code werden nicht intelligent zwischengespeichert. Das macht die Seite langsamer."}, {"id": "dsgvo", "name": "DSGVO & Rechtliches", "score": 80, "status": "ok", "text": "Die Datenschutz-Einstellungen sind nicht vollständig. Das birgt rechtliche Risiken."}, {"id": "tech", "name": "Technischer Eindruck", "score": 100, "status": "ok", "text": "Technische Probleme beeinträchtigen die Benutzer-Erfahrung und das Ranking."}] -->
+      </div>
+      <!-- Gewichtungs-Legende -->
+      <div style="background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8); margin-top: var(--space-4);">
+        <h4 style="margin-top: 0; margin-bottom: var(--space-6);">So funktioniert die Gewichtung</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6); font-size: 0.95rem;">
+          <div>
+            <div style="font-weight: 600; color: var(--color-accent); margin-bottom: var(--space-2);">⭐ 52% Kritisch</div>
+            <p style="margin: 0; color: var(--color-text-muted);">Speed (15%), Mobile (15%), Security (12%), DSGVO (10%) — diese 4 Faktoren sind das Fundament.</p>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: var(--color-warn); margin-bottom: var(--space-2);">🎯 30% Wichtig</div>
+            <p style="margin: 0; color: var(--color-text-muted);">SEO (10%), Accessibility (7%), H1/H2 (5%), Alt-Texte (5%), Caching (5%) — für Sichtbarkeit & UX.</p>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: #6B9B6B; margin-bottom: var(--space-2);">💡 18% Nice-to-Have</div>
+            <p style="margin: 0; color: var(--color-text-muted);">Textqualität (5%), Meta-Tags (3%), Links (4%), Robots (3%), Filenames (3%), Tech (1%) — Optimierung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const categoriesJson = '[{"id": "speed", "name": "Ladegeschwindigkeit", "score": 99, "status": "ok", "text": "Ihre Website braucht zu lange zum Laden. Besucher verlassen die Seite, wenn sie länger als 3 Sekunden dauert."}, {"id": "mobile", "name": "Mobile Optimierung", "score": 60, "status": "warn", "text": "Die Seite sieht auf Smartphones nicht optimal aus oder ist schwer zu bedienen."}, {"id": "seo", "name": "SEO Grundlagen", "score": 18, "status": "bad", "text": "Google findet Ihre Inhalte nicht richtig. Deshalb erscheinen Sie nicht bei relevanten Suchvorgängen."}, {"id": "h1h2", "name": "H1/H2 Struktur", "score": 8, "status": "bad", "text": "Die Seitenstruktur (Überschriften) ist nicht korrekt. Google versteht die Hierarchie nicht."}, {"id": "text", "name": "Textlängen & Qualität", "score": 18, "status": "bad", "text": "Die Texte sind zu kurz oder schwach. Besucher verstehen nicht sofort, was Sie anbieten."}, {"id": "alt", "name": "Alt-Texte & Bilder", "score": 95, "status": "ok", "text": "Bilder haben keine Beschreibungen für Google und Menschen mit Sehbehinderung."}, {"id": "filenames", "name": "Bilddateinamen", "score": 90, "status": "ok", "text": "Bilddateinamen sind unklar. Das ist schlecht für SEO und Barrierefreiheit."}, {"id": "meta", "name": "Meta Tags (Social)", "score": 0, "status": "bad", "text": "Meta-Tags (Vorschaubilder in WhatsApp/Facebook) sind nicht korrekt ausgefüllt."}, {"id": "security", "name": "Sicherheit & Server", "score": 10, "status": "bad", "text": "Es fehlen wichtige Sicherheits-Einstellungen. Das birgt Vertrauensverlust."}, {"id": "caching", "name": "Caching & Infrastruktur", "score": 55, "status": "warn", "text": "Bilder und Code werden nicht intelligent zwischengespeichert. Das macht die Seite langsamer."}, {"id": "dsgvo", "name": "DSGVO & Rechtliches", "score": 80, "status": "ok", "text": "Die Datenschutz-Einstellungen sind nicht vollständig. Das birgt rechtliche Risiken."}, {"id": "tech", "name": "Technischer Eindruck", "score": 100, "status": "ok", "text": "Technische Probleme beeinträchtigen die Benutzer-Erfahrung und das Ranking."}]';
+  if (!categoriesJson) return;
+  try {
+    const categories = JSON.parse(categoriesJson);
+    const container = document.getElementById('categories-container');
+
+    // Gruppiere nach Gewichtung
+    const weights = {
+      'speed': {w: 0.15, label: '15%', group: 'Kritisch'},
+      'mobile': {w: 0.15, label: '15%', group: 'Kritisch'},
+      'security': {w: 0.12, label: '12%', group: 'Kritisch'},
+      'dsgvo': {w: 0.10, label: '10%', group: 'Kritisch'},
+      'seo': {w: 0.10, label: '10%', group: 'Wichtig'},
+      'a11y': {w: 0.07, label: '7%', group: 'Wichtig'},
+      'caching': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'alt': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'text': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'h1h2': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'links': {w: 0.04, label: '4%', group: 'Nice-to-Have'},
+      'robots': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'meta': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'filenames': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'tech': {w: 0.03, label: '3%', group: 'Nice-to-Have'}
+    };
+
+    // Sortiere Kategorien nach Gewichtung (absteigend)
+    const sorted = [...categories].sort((a, b) => {
+      const wA = weights[a.id]?.w || 0.01;
+      const wB = weights[b.id]?.w || 0.01;
+      return wB - wA;
+    });
+
+    sorted.forEach(cat => {
+      const weight = weights[cat.id] || {w: 0.01, label: '1%', group: 'Nice-to-Have'};
+      const colors = {ok: '#22c55e', warn: '#f59e0b', bad: '#ef4444'};
+      const color = colors[cat.status] || '#888';
+      const isCritical = weight.group === 'Kritisch';
+      const borderStyle = isCritical ? 'border: 2px solid ' + color : 'border: 1px solid ' + color;
+
+      const html = `
+        <div style="background: white; ${borderStyle}; border-radius: var(--radius-lg); padding: var(--space-6); position: relative; min-height: 280px; display: flex; flex-direction: column;">
+          <div style="position: absolute; top: 8px; right: 12px; background: ${color}; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;">
+            ${weight.label}
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-4); padding-right: 60px;">
+            <div style="font-weight: 600; font-size: 1.05rem;">${cat.name}</div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: ${color}; white-space: nowrap; margin-left: var(--space-4);">${cat.score}</div>
+          </div>
+          <div style="background: #f5f5f5; border-radius: 4px; height: 6px; margin-bottom: var(--space-4);">
+            <div style="background: ${color}; height: 100%; border-radius: 4px; width: ${cat.score}%;" />
+          </div>
+          <div style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: var(--space-4); flex-grow: 1;">
+            ${cat.text}
+          </div>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: auto;">
+            <span style="display: inline-block; background: ${color === '#22c55e' ? 'rgba(34,197,94,0.1)' : color === '#f59e0b' ? 'rgba(245,158,11,0.1)' : 'rgba(239,68,68,0.1)'}; color: ${color}; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
+              ${cat.status === 'ok' ? '✓ OK' : cat.status === 'warn' ? '⚠ Warnung' : '✕ Kritisch'}
+            </span>
+            ${isCritical ? '<span style="display: inline-block; background: var(--color-accent-light); color: var(--color-accent-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">★ Priorität</span>' : ''}
+          </div>
+        </div>
+      `;
+      container.innerHTML += html;
+    });
+  } catch(e) {
+    console.error('Fehler beim Laden der Kategorien:', e);
+  }
+})();
+</script>
 
 <section>
   <div class="container">
@@ -383,17 +548,17 @@ footer a { color: rgba(255,255,255,.7); }
         <img src="https://image.thum.io/get/width/1200/crop/900/png/http://www.elektro-schaefter.com/" alt="Aktuelle Website elektro-schaefter.com">
       </div>
       <ol class="audit-list">
-        <li><div class="ix">1</div><div><div class="title">Kein Vorschau-Bild beim Teilen</div><div class="desc">Wenn jemand Ihre Seite in WhatsApp oder Facebook teilt, erscheint kein Bild und kein sinnvoller Text — nur ein leerer Block. Das wirkt nicht vertrauenswürdig und kostet Sie Klicks, bevor der erste Eindruck überhaupt entsteht.</div></div></li>
-        <li><div class="ix">2</div><div><div class="title">Überschriften-Struktur ist ungeordnet</div><div class="desc">Google liest Ihre Seite wie ein Inhaltsverzeichnis. Wenn Haupt- und Unterüberschriften durcheinander sind oder fehlen, versteht die Suchmaschine nicht, wofür Sie eigentlich stehen. Für Elektriker in Steinheim ist das ein echter Nachteil gegenüber Mitbewerbern die das sauber gelöst haben.</div></div></li>
-        <li><div class="ix">3</div><div><div class="title">Keine verschlüsselte Verbindung aktiv</div><div class="desc">Ihre Seite läuft noch nicht durchgehend über eine gesicherte Verbindung. Browser zeigen das teilweise als Warnung an. Wer das sieht, klickt weg — und Google wertet es als Minuspunkt bei der Platzierung.</div></div></li>
-        <li><div class="ix">4</div><div><div class="title">Kaum lokale Sichtbarkeit für Steinheim</div><div class="desc">Die Seite enthält keine korrekte Google-Adress-Kennzeichnung, die Google signalisiert: Dieser Betrieb ist in Steinheim a.d. Murr ansässig und macht dort Installationen, Reparaturen und Neubauten. Ohne diese Signale tauchen Sie in der lokalen Kartensuche seltener auf — genau da suchen Privatkunden.</div></div></li>
-        <li><div class="ix">5</div><div><div class="title">Kein immer sichtbarer Anfrage-Knopf</div><div class="desc">Wer Ihre Seite auf dem Smartphone aufruft, muss scrollen und suchen, um Kontakt aufzunehmen. Ein Knopf der beim Scrollen immer sichtbar bleibt und mit einem Tippen anrufen lässt, holt deutlich mehr Anfragen rein — gerade bei Notfällen oder kurzem Interesse.</div></div></li>
+        <li><div class="ix">1</div><div><div class="title">Kein Sicherheits-Zertifikat auf der Seite</div><div class="desc">Ihre Seite läuft ohne verschlüsselte Verbindung. Manche Browser zeigen dem Besucher direkt eine Warnung — 'Nicht sicher' — bevor er überhaupt Ihre Nummer sieht. Das kostet Vertrauen und Anfragen, bevor jemand auch nur gescrollt hat.</div></div></li>
+        <li><div class="ix">2</div><div><div class="title">Google findet keine Haupt-Überschrift</div><div class="desc">Es gibt auf Ihrer Seite keine H1-Überschrift — das ist für Google so, als würde ein Dokument komplett ohne Titel ankommen. Die Suchmaschine kann nicht einordnen, worum es geht und für welche Suchbegriffe sie Sie zeigen soll. Für einen Elektriker in Steinheim ist das eine vermeidbare Lücke.</div></div></li>
+        <li><div class="ix">3</div><div><div class="title">Zu wenig Text — Google sieht kaum Inhalt</div><div class="desc">Rund 21 Wörter auf der gesamten Seite — das reicht nicht, damit Google versteht, was Sie anbieten und wo Sie tätig sind. Wer nach 'Elektriker Steinheim' oder 'Elektroinstallation Marbach' sucht, wird Sie in diesem Zustand kaum finden.</div></div></li>
+        <li><div class="ix">4</div><div><div class="title">Seitentitel zu lang — wird in Google abgeschnitten</div><div class="desc">Ihr Seitentitel hat 80 Zeichen, empfohlen sind maximal 60. In den Google-Suchergebnissen wird er einfach abgehackt — der Rest ist weg. Wer dann Ihren Eintrag sieht, bekommt einen unvollständigen Eindruck, bevor er klickt.</div></div></li>
+        <li><div class="ix">5</div><div><div class="title">Kein Vorschau-Bild beim Teilen in WhatsApp</div><div class="desc">Wenn jemand Ihre Seite in WhatsApp oder Facebook teilt, erscheint kein Bild, kein ordentlicher Titel — nur ein leerer grauer Kasten. Für eine Weiterempfehlung unter Bekannten im Raum Steinheim ist das ein unnötiger Auftritt.</div></div></li>
       </ol>
     </div>
     <div class="scorecards">
       <div class="scorecard warn">
         <div class="label">Gesamt-Score</div>
-        <div class="num">53<span style="font-size: 1.2rem; color: var(--color-text-muted);">/100</span></div>
+        <div class="num">49<span style="font-size: 1.2rem; color: var(--color-text-muted);">/100</span></div>
         <div class="hint">unter 60 = deutliches Verbesserungs­potenzial</div>
       </div>
       <div class="scorecard bad">
@@ -461,69 +626,69 @@ footer a { color: rgba(255,255,255,.7); }
     <div class="pricing-wrap">
       <div class="price-card">
         
-        <div class="label">01 · Basis-Redesign</div>
+        <div class="label">01 · BASIS REDESIGN</div>
         <h3>Saubere neue Seite,<br>solide Grundlage.</h3>
-        <p class="summary">Komplett neuer Auftritt. Sauber, mobile-first, rechtssicher.</p>
+        <p class="summary">Komplett neuer Auftritt. Sauber, mobile-first, rechtssicher. Bis zu 5 Unterseiten.</p>
         <div class="price-line"><span class="price-num">1.800&nbsp;€</span><span class="price-unit">netto</span></div>
         <p class="price-detail">2.142,00 € brutto (inkl. 19 % MwSt.) · einmalig</p>
         <ul>
           <li><span class="check">✓</span> Komplettes Redesign &amp; Programmierung</li>
           <li><span class="check">✓</span> Mobile-First Layout (Smartphone &amp; Tablet)</li>
-          <li><span class="check">✓</span> Pflichtangaben rechtssicher (Impressum, Datenschutz, Cookie)</li>
+          <li><span class="check">✓</span> Texte übernommen &amp; optimiert</li>
+          <li><span class="check">✓</span> Schnelle Ladezeit (Google-freundlich)</li>
           <li><span class="check">✓</span> Sicherheits-Zertifikat (HTTPS / SSL)</li>
-          <li><span class="check">✓</span> 1 Jahr Hosting inklusive</li>
-          <li><span class="check">✓</span> Einweisung &amp; Übergabe vor Ort</li>
+          <li><span class="check">✓</span> Liveschaltung in 3–5 Wochen</li>
         </ul>
         <div class="price-cons">
-          <div class="price-cons-label">Was hier nicht drin ist</div>
-          <ul>
-            <li><span class="x">✕</span>Google-Adress-Kennzeichnung &amp; lokale SEO</li>
-            <li><span class="x">✕</span>Texte: schreiben Sie selbst oder liefern zu</li>
-            <li><span class="x">✕</span>Vorschau beim Teilen in WhatsApp/Facebook</li>
-          </ul>
+          <div class="price-cons-label">Monatliche Wartung:</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">29 € / Monat<br><small style="color: var(--color-text-muted);">1 Stunde Änderungen &amp; Updates</small></div>
         </div>
       </div>
       <div class="price-card featured">
         <div class="ribbon">Empfohlen für Sie</div>
-        <div class="label">02 · Vollständig</div>
+        <div class="label">02 · PROFESSIONELL SEO</div>
         <h3>Mit lokaler Sichtbarkeit<br>und fertigen Inhalten.</h3>
-        <p class="summary">Alles aus Paket 01 — plus echte Sichtbarkeit bei Google, fertige Texte und Trust-Aufbau.</p>
-        <div class="price-line"><span class="price-num">2.600&nbsp;€</span><span class="price-unit">netto</span></div>
-        <p class="price-detail">3.094,00 € brutto · einmalig</p>
+        <p class="summary">Alles aus Paket 01 — plus echte Sichtbarkeit bei Google, fertige Texte und Trust-Aufbau. Bis zu 8 Unterseiten.</p>
+        <div class="price-line"><span class="price-num">2.500&nbsp;€</span><span class="price-unit">netto</span></div>
+        <p class="price-detail">2.975,00 € brutto · einmalig</p>
         <ul>
           <li><span class="check">✓</span> Alles aus Paket 01</li>
-          <li><span class="check">✓</span> Lokale SEO (Sichtbarkeit bei Google) für Steinheim a.d. Murr &amp; Umkreis</li>
-          <li><span class="check">✓</span> Google Business Profile anbinden &amp; optimieren</li>
-          <li><span class="check">✓</span> Texte für alle Leistungs-Seiten geschrieben</li>
-          <li><span class="check">✓</span> Vorschau-Bild beim Teilen in WhatsApp/Facebook</li>
-          <li><span class="check">✓</span> Bewertungs-Strategie (Google &amp; Branche)</li>
-          <li><span class="check">✓</span> Strukturierte Google-Daten (LocalBusiness)</li>
-          <li><span class="check">✓</span> Fotografie-Beratung (Eigenfotos oder Vermittlung)</li>
+          <li><span class="check">✓</span> Lokale SEO (On-Page komplett)</li>
+          <li><span class="check">✓</span> Google Business Profile Setup</li>
+          <li><span class="check">✓</span> Leistungsseiten neu geschrieben (SEO)</li>
+          <li><span class="check">✓</span> Open Graph Tags (Social Media Preview)</li>
+          <li><span class="check">✓</span> Bewertungsstrategie für Google</li>
+          <li><span class="check">✓</span> Strukturierte Daten (Schema Markup)</li>
         </ul>
         <div class="price-cons">
-          <div class="price-cons-label">Was hier nicht drin ist</div>
-          <ul>
-            <li><span class="x">✕</span>Übernahme Ihres Social Media (Posts &amp; Pflege)</li>
-            <li><span class="x">✕</span>Sichtbarkeit in ChatGPT, Claude &amp; anderen KI-Assistenten</li>
-          </ul>
+          <div class="price-cons-label">Monatliche Wartung (wähle eine):</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">
+            29 € / Monat — <small style="color: var(--color-text-muted);">1 Stunde Änderungen</small><br>
+            <strong style="color: var(--color-accent);">59 € / Monat — <small style="color: var(--color-text-muted);">bis zu 2 Stunden (empfohlen)</small></strong>
+          </div>
         </div>
       </div>
       <div class="price-card">
         
-        <div class="label">03 · Premium · Komplett</div>
+        <div class="label">03 · PREMIUM MIT KI &amp; KALENDER</div>
         <h3>Webseite + Social Media<br>komplett aus einer Hand.</h3>
-        <p class="summary">Alles aus Paket 02 — plus: Wir übernehmen Ihren Social-Media-Auftritt komplett. Sie haben keinen Stress damit.</p>
-        <div class="price-line"><span class="price-num">3.200&nbsp;€</span><span class="price-unit">netto</span></div>
-        <p class="price-detail">3.808,00 € brutto · einmalig (Webseite) + Social-Media-Service ab 125 €/Monat</p>
+        <p class="summary">Alles aus Paket 02 — plus: KI-Sichtbarkeit, Buchungskalender, Monatl. Reports. Bis zu 15 Unterseiten.</p>
+        <div class="price-line"><span class="price-num">3.500&nbsp;€</span><span class="price-unit">netto</span></div>
+        <p class="price-detail">4.165,00 € brutto · einmalig</p>
         <ul>
-          <li><span class="check">✓</span> Alles aus Paket 02</li>
-          <li><span class="check">✓</span> Social-Media-Setup (Facebook, Instagram, Google)</li>
-          <li><span class="check">✓</span> Erste 3 Monate Posting komplett von uns (Bonus)</li>
-          <li><span class="check">✓</span> Sichtbarkeit in KI-Assistenten (ChatGPT, Claude)</li>
-          <li><span class="check">✓</span> Erweiterte Such-Strategie (mehrere Keyword-Cluster)</li>
-          <li><span class="check">✓</span> Monatlicher Sichtbarkeits-Bericht</li>
-          <li><span class="check">✓</span> Direkter Draht zu mir (WhatsApp, kein Ticket-System)</li>
+          <li><span class="check">✓</span> Alles aus BASIS &amp; PROFESSIONELL +</li>
+          <li><span class="check">✓</span> KI-Assistent Sichtbarkeit (ChatGPT, Gemini)</li>
+          <li><span class="check">✓</span> Erweiterte Google Suchstrategien</li>
+          <li><span class="check">✓</span> Keyword-Research &amp; Clustering</li>
+          <li><span class="check">✓</span> Monatl. Sichtbarkeitsbericht (Jahr 1)</li>
+          <li><span class="check">✓</span> Komplette Text-Optimierung</li>
+          <li><span class="check">✓</span> Buchungskalender + Firmenkalender-Integration</li>
+          <li><span class="check">✓</span> Professionelle Bildintegration</li>
         </ul>
+        <div class="price-cons">
+          <div class="price-cons-label">Monatliche Wartung:</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">59 € / Monat<br><small style="color: var(--color-text-muted);">bis zu 2 Stunden Änderungen &amp; Optimierungen</small></div>
+        </div>
       </div>
     </div>
     <p style="text-align: center; margin-top: var(--space-10); color: var(--color-text-muted); font-size: .95rem;">
@@ -577,7 +742,7 @@ footer a { color: rgba(255,255,255,.7); }
         <div class="roi-card"><div class="label">Ø Kundenwert / Jahr</div><div class="num"><span class="acc">750 €</span></div><div class="detail">Annahme für Elektriker-Stammkundschaft</div></div>
         <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">8 – 18 k €</span></div><div class="detail">konservativ kalkuliert · keine Garantie</div></div>
       </div>
-      <p class="roi-disclaimer">Annahmen: lokaler Markt Steinheim a.d. Murr und Umgebung Ludwigsburg/Heilbronn, Wettbewerb mittelhoch, durchschnittlicher Auftragswert Elektro-Handwerk. Ich hab mir mal angeschaut, was realistisch ist — keine Garantie, aber die Größenordnung stimmt.</p>
+      <p class="roi-disclaimer">Annahmen: lokaler Suchmarkt Steinheim a.d. Murr und Umgebung Marbach/Bottwartal, Wettbewerb mittelhoch, durchschnittlicher Auftragswert Elektriker-Handwerk. Ich hab mir mal angeschaut, was realistisch ist — keine Garantie, sondern eine ehrliche Größenordnung. Wer aktuell nicht gefunden wird, kann auch nicht verglichen werden.</p>
     </div>
   </div>
 </section>
@@ -610,7 +775,7 @@ footer a { color: rgba(255,255,255,.7); }
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.868-2.031-.967-.273-.099-.471-.148-.67.149-.197.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
         WhatsApp
       </a>
-      <a class="btn btn-ghost btn-lg" href="mailto:hallo@web-emotions.com">✉ hallo@web-emotions.com</a>
+      <a class="btn btn-ghost btn-lg" href="mailto:hallo@web-emotions.com?subject=Dein%20Angebot%3A%20Elektro%20Sch%C3%A4fter">✉ hallo@web-emotions.com</a>
     </div>
     <div class="final-meta">
       <div>Patrick Rupp · WebEmotions</div>
@@ -622,7 +787,7 @@ footer a { color: rgba(255,255,255,.7); }
 
 <footer>
   <div class="signature"><span style="color: var(--color-accent);">●</span> WEB&nbsp;EMOTIONS · PATRICK&nbsp;RUPP</div>
-  <div>Webdesign-Audit erstellt am 20.05.2026 · Daten aus Live-Analyse von elektro-schaefter.com</div>
+  <div>Webdesign-Audit erstellt am 21.05.2026 · Daten aus Live-Analyse von elektro-schaefter.com</div>
   <div style="margin-top: var(--space-3);"><a href="https://www.web-emotions.com">web-emotions.com</a> · <a href="tel:+491796152161">0179 615 2161</a></div>
 </footer>
 
