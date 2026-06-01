@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Relaunch-Angebot für https://www.bischoff-naturstein.de — präsentiert von WebEmotions</title>
+<meta name="description" content="Individuelles Webseiten-Relaunch-Angebot für https://www.bischoff-naturstein.de, . Präsentiert von WebEmotions, Patrick Rupp.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-accent: #afcb05; --color-accent-dark: #8fa304; --color-accent-light: rgba(175, 203, 5, .12);
+  --color-black: #0A0A0A; --color-white: #fff; --color-off-white: #F5F4F0; --color-surface: #FAFAF8;
+  --color-text: #1A1A1A; --color-text-muted: #6B6B6B; --color-text-light: #9A9A9A;
+  --color-border: #E8E6E0; --color-bad: #ef4444; --color-warn: #f59e0b; --color-ok: #22c55e;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+  --radius-sm: .375rem; --radius: .75rem; --radius-lg: 1.25rem; --radius-xl: 2rem;
+  --shadow: 0 10px 30px rgba(0,0,0,.08), 0 2px 8px rgba(0,0,0,.04);
+  --shadow-lg: 0 25px 80px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.08);
+  --container: 1240px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-body); font-size: 17px; line-height: 1.65;
+       color: var(--color-text); background: var(--color-off-white);
+       -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--space-6); }
+.eyebrow { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em;
+           color: var(--color-accent); margin: 0 0 var(--space-4); display: inline-flex; align-items: center; gap: .55rem; }
+.eyebrow::before { content: ""; width: 26px; height: 1px; background: var(--color-accent); }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spacing: -.02em; line-height: 1.08; margin: 0 0 var(--space-6); }
+h1 { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.035em; line-height: 1; }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.03em; }
+h3 { font-size: clamp(1.4rem, 2vw, 1.85rem); }
+h4 { font-size: 1.15rem; }
+.lead { font-size: 1.2rem; line-height: 1.6; color: var(--color-text-muted); max-width: 640px; }
+.accent { color: var(--color-accent); }
+.serif-italic { font-family: var(--font-display); font-style: italic; font-weight: 500; }
+
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(10,10,10,.92);
+       backdrop-filter: blur(20px) saturate(140%); border-bottom: 1px solid rgba(255,255,255,.08); color: white; }
+.nav-inner { max-width: var(--container); margin: 0 auto; padding: var(--space-3) var(--space-6);
+             display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); }
+.we-mark { display: flex; align-items: center; gap: 12px; }
+.we-mark .dot { width: 10px; height: 10px; background: var(--color-accent); border-radius: 50%;
+                box-shadow: 0 0 16px var(--color-accent); flex-shrink: 0; }
+.we-mark-text { display: flex; flex-direction: column; gap: 3px; line-height: 1; }
+.we-name { font-size: 1rem; font-weight: 700; color: white; letter-spacing: .08em; }
+.we-tag { font-size: .58rem; color: var(--color-accent); letter-spacing: .32em; font-weight: 600;
+          display: inline-flex; align-items: center; gap: 8px; }
+.we-tag::before, .we-tag::after { content: ""; width: 14px; height: 1px; background: var(--color-accent); }
+.nav-cta { background: var(--color-accent); color: var(--color-black); font-weight: 600;
+           padding: .6rem 1.15rem; border-radius: 999px; font-size: .9rem; white-space: nowrap; }
+.nav-cta:hover { background: var(--color-accent-dark); }
+@media (max-width: 580px) { .we-tag { display: none; } .we-name { font-size: .9rem; } }
+
+.btn { display: inline-flex; align-items: center; gap: .6rem; padding: 1rem 1.6rem; border-radius: 999px;
+       font-weight: 600; font-size: 1rem; border: 1px solid transparent; transition: all .2s; cursor: pointer; }
+.btn-primary { background: var(--color-accent); color: var(--color-black); }
+.btn-primary:hover { background: var(--color-accent-dark); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(175,203,5,.35); }
+.btn-ghost { background: transparent; color: white; border-color: rgba(255,255,255,.25); }
+.btn-ghost:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.btn-whatsapp { background: #25D366; color: white; border-color: #25D366; }
+.btn-whatsapp:hover { background: #1ebf57; transform: translateY(-2px); }
+.btn-lg { padding: 1.15rem 2rem; font-size: 1.05rem; }
+.arrow { display: inline-block; transition: transform .2s; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+.hero { background: var(--color-black); color: white; position: relative; overflow: hidden; padding: var(--space-24) 0 var(--space-20); }
+.hero::before { content: ""; position: absolute; inset: 0;
+                background: radial-gradient(900px 500px at 80% 20%, rgba(175,203,5,.10), transparent 60%),
+                            radial-gradient(700px 600px at 15% 80%, rgba(60,80,120,.15), transparent 65%); }
+.hero-inner { max-width: var(--container); margin: 0 auto; padding: 0 var(--space-6); position: relative; z-index: 2;
+              display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--space-16); align-items: center; }
+@media (max-width: 980px) { .hero-inner { grid-template-columns: 1fr; gap: var(--space-12); } }
+.hero h1 { color: white; }
+.hero h1 em { font-style: italic; color: var(--color-accent); font-weight: 500; }
+.hero-sub { color: rgba(255,255,255,.75); font-size: 1.2rem; line-height: 1.6; max-width: 580px; margin-bottom: var(--space-8); }
+.hero-meta { display: flex; flex-wrap: wrap; gap: var(--space-6); margin-top: var(--space-10);
+             padding-top: var(--space-8); border-top: 1px solid rgba(255,255,255,.1); }
+.hero-meta div { font-size: .85rem; color: rgba(255,255,255,.55); }
+.hero-meta strong { display: block; color: white; font-weight: 600; font-size: .98rem; margin-bottom: 2px; }
+.hero-cta { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-2); }
+.hero-visual { position: relative; aspect-ratio: 16/11; border-radius: var(--radius-lg); overflow: hidden;
+               border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow-lg); background: #1a1a1a; }
+.hero-visual img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.hero-visual::after { content: ""; position: absolute; inset: 0;
+                      background: linear-gradient(180deg, transparent 40%, rgba(10,10,10,.7) 100%); }
+.hero-tag { position: absolute; left: var(--space-5); bottom: var(--space-5); z-index: 2;
+            background: rgba(10,10,10,.65); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,.12);
+            border-radius: 999px; padding: .55rem 1rem; font-size: .82rem; color: rgba(255,255,255,.85);
+            display: inline-flex; align-items: center; gap: .5rem; }
+.hero-tag .pulse { width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; box-shadow: 0 0 12px var(--color-accent); }
+
+section { padding: var(--space-24) 0; }
+section.tinted { background: var(--color-surface); }
+.section-head { max-width: 760px; margin-bottom: var(--space-16); }
+.section-head h2 em { font-style: italic; color: var(--color-text-muted); font-weight: 400; }
+
+.brief { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+         padding: var(--space-12); max-width: 880px; margin: 0 auto; box-shadow: var(--shadow); position: relative; }
+.brief::before { content: ""; position: absolute; top: 0; left: var(--space-12); right: var(--space-12);
+                 height: 4px; background: var(--color-accent); border-radius: 2px; }
+.brief-from { display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);
+              padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
+.brief-from img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+.brief-from .label { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--color-text-muted); margin-bottom: 2px; }
+.brief-from .name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
+.brief p { font-size: 1.08rem; line-height: 1.7; color: var(--color-text); margin: 0 0 var(--space-4); }
+.brief p:last-child { margin-bottom: 0; }
+.brief .sig { margin-top: var(--space-6); font-family: var(--font-display); font-style: italic; color: var(--color-text-muted); }
+
+.audit-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--space-12); align-items: start; }
+@media (max-width: 980px) { .audit-grid { grid-template-columns: 1fr; } }
+.audit-screenshot { border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden;
+                    box-shadow: var(--shadow); background: white; position: relative; }
+.audit-screenshot .tag { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,.95);
+                         font-size: .75rem; font-weight: 600; padding: .35rem .7rem; border-radius: 999px;
+                         color: var(--color-bad); text-transform: uppercase; letter-spacing: .08em; z-index: 2; }
+.audit-screenshot img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.audit-list { list-style: none; padding: 0; margin: 0; }
+.audit-list li { display: flex; gap: var(--space-4); padding: var(--space-5) 0;
+                 border-bottom: 1px solid var(--color-border); align-items: flex-start; }
+.audit-list li:last-child { border-bottom: none; }
+.audit-list .ix { flex: 0 0 32px; height: 32px; border-radius: 50%; background: rgba(239,68,68,.1);
+                  color: var(--color-bad); display: grid; place-items: center; font-weight: 700; font-size: .9rem; }
+.audit-list .title { font-weight: 600; margin-bottom: 4px; }
+.audit-list .desc { color: var(--color-text-muted); font-size: .94rem; line-height: 1.55; }
+
+.scorecards { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); margin-top: var(--space-12); }
+@media (max-width: 780px) { .scorecards { grid-template-columns: repeat(2, 1fr); } }
+.scorecard { background: white; border: 1px solid var(--color-border); padding: var(--space-6); border-radius: var(--radius); }
+.scorecard .label { font-size: .8rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .1em; }
+.scorecard .num { font-family: var(--font-display); font-size: 2.4rem; font-weight: 600; line-height: 1; margin: var(--space-3) 0 var(--space-2); }
+.scorecard.bad .num { color: var(--color-bad); }
+.scorecard.warn .num { color: var(--color-warn); }
+.scorecard.ok .num { color: var(--color-ok); }
+.scorecard .hint { font-size: .85rem; color: var(--color-text-muted); }
+
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-top: var(--space-10); }
+@media (max-width: 900px) { .compare { grid-template-columns: 1fr; } }
+.compare-card { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border);
+                background: white; position: relative; box-shadow: var(--shadow); }
+.compare-card .badge { position: absolute; top: 14px; left: 14px; font-size: .72rem; font-weight: 700;
+                       letter-spacing: .12em; padding: .35rem .75rem; border-radius: 999px;
+                       text-transform: uppercase; z-index: 2; }
+.compare-card .badge.old { background: rgba(239,68,68,.12); color: var(--color-bad); }
+.compare-card .badge.new { background: var(--color-accent); color: var(--color-black); }
+.compare-card .visual { aspect-ratio: 16/10; overflow: hidden; background: #0a0a0a; }
+.compare-card .visual img { width: 100%; height: 100%; object-fit: cover; }
+.compare-card .meta { padding: var(--space-6); }
+.compare-card .meta h4 { margin: 0 0 var(--space-2); }
+.compare-card .meta h4 a { color: inherit; border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; }
+.compare-card .meta h4 a:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); }
+.compare-card .meta h4 a::after { content: " ↗"; font-size: .85em; opacity: .6; }
+.compare-card .meta p { margin: 0; color: var(--color-text-muted); font-size: .94rem; }
+
+.mobile-showcase { display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--space-16); align-items: center;
+                   margin-top: var(--space-10); }
+@media (max-width: 900px) { .mobile-showcase { grid-template-columns: 1fr; } }
+.mobile-showcase .phone-wrap img { max-width: 100%; border-radius: var(--radius-lg);
+                                    box-shadow: 0 30px 80px rgba(0,0,0,.25), 0 12px 32px rgba(0,0,0,.15); }
+.mobile-stats { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); margin-top: var(--space-8); }
+.mobile-stat { padding: var(--space-5); background: white; border: 1px solid var(--color-border); border-radius: var(--radius); }
+.mobile-stat .num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; color: var(--color-accent); line-height: 1; margin-bottom: var(--space-2); }
+.mobile-stat .text { font-size: .9rem; color: var(--color-text-muted); }
+
+.roi { background: linear-gradient(135deg, #0a0a0a 0%, #161616 60%, #0a0a0a 100%); color: white;
+       border-radius: var(--radius-xl); padding: var(--space-16); margin-top: var(--space-10);
+       position: relative; overflow: hidden; }
+.roi::before { content: ""; position: absolute; top: -40%; right: -10%; width: 500px; height: 500px;
+               background: radial-gradient(circle, rgba(175,203,5,.18), transparent 70%); }
+.roi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); position: relative; z-index: 1; }
+@media (max-width: 900px) { .roi-grid { grid-template-columns: repeat(2, 1fr); } }
+.roi-card { padding: var(--space-5) 0; border-left: 1px solid rgba(255,255,255,.1); padding-left: var(--space-5); }
+.roi-card:first-child { border-left: none; padding-left: 0; }
+@media (max-width: 900px) {
+  .roi-card { border-left: none; padding-left: 0; }
+  .roi-card:nth-child(3), .roi-card:nth-child(4) { border-top: 1px solid rgba(255,255,255,.1); padding-top: var(--space-6); }
+}
+.roi-card .label { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.55); margin-bottom: var(--space-3); }
+.roi-card .num { font-family: var(--font-display); font-size: 2.6rem; font-weight: 600; line-height: 1; margin-bottom: var(--space-3); }
+.roi-card .num .acc { color: var(--color-accent); }
+.roi-card .detail { font-size: .9rem; color: rgba(255,255,255,.65); line-height: 1.55; }
+.roi-disclaimer { margin-top: var(--space-10); padding-top: var(--space-8); border-top: 1px solid rgba(255,255,255,.1);
+                  font-size: .82rem; color: rgba(255,255,255,.55); line-height: 1.6; }
+
+.pricing-wrap { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-5); align-items: stretch; margin-top: var(--space-12); }
+@media (max-width: 1100px) { .pricing-wrap { grid-template-columns: 1fr; } }
+.price-card { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+              padding: var(--space-8); position: relative; display: flex; flex-direction: column; }
+.price-card.featured { background: var(--color-black); color: white; border-color: var(--color-black);
+                       transform: scale(1.03); box-shadow: 0 30px 80px rgba(175,203,5,.18), 0 12px 32px rgba(0,0,0,.4); }
+@media (max-width: 1100px) { .price-card.featured { transform: none; } }
+.price-card .ribbon { position: absolute; top: -14px; right: var(--space-6); background: var(--color-accent);
+                      color: var(--color-black); font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+                      text-transform: uppercase; padding: .4rem .85rem; border-radius: 999px; }
+.price-card .label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em;
+                     color: var(--color-text-muted); margin-bottom: var(--space-3); }
+.price-card.featured .label { color: var(--color-accent); }
+.price-card h3 { font-size: 1.55rem; line-height: 1.15; margin-bottom: var(--space-3); }
+.price-card .summary { color: var(--color-text-muted); font-size: .96rem; margin-bottom: var(--space-6); }
+.price-card.featured .summary { color: rgba(255,255,255,.7); }
+.price-line { display: flex; align-items: baseline; gap: var(--space-2); margin: var(--space-5) 0 var(--space-2); }
+.price-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 600; line-height: 1; letter-spacing: -.03em; }
+.price-card.featured .price-num { color: var(--color-accent); }
+.price-unit { font-size: .95rem; color: var(--color-text-muted); }
+.price-card.featured .price-unit { color: rgba(255,255,255,.65); }
+.price-detail { color: var(--color-text-muted); font-size: .9rem; margin-bottom: var(--space-6); }
+.price-card.featured .price-detail { color: rgba(255,255,255,.65); }
+.price-card ul { list-style: none; padding: 0; margin: 0 0 var(--space-6); flex: 1; }
+.price-card ul li { padding: var(--space-3) 0; display: flex; align-items: flex-start; gap: var(--space-3);
+                    border-bottom: 1px solid var(--color-border); font-size: .96rem; }
+.price-card.featured ul li { border-color: rgba(255,255,255,.1); }
+.price-card ul li:last-child { border-bottom: none; }
+.price-card ul li .check { flex: 0 0 20px; height: 20px; border-radius: 50%; background: var(--color-accent);
+                           display: grid; place-items: center; color: var(--color-black); font-size: .65rem;
+                           font-weight: 700; margin-top: 3px; }
+.price-cons { margin-top: var(--space-5); padding: var(--space-5); background: rgba(239,68,68,.04);
+              border: 1px dashed rgba(239,68,68,.25); border-radius: var(--radius); }
+.price-cons-label { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+                    color: var(--color-bad); margin-bottom: var(--space-3); }
+.price-cons ul { margin: 0; }
+.price-cons ul li { padding: 5px 0; font-size: .86rem; line-height: 1.45; color: var(--color-text-muted);
+                    display: flex; gap: 10px; align-items: flex-start; border: none; }
+.price-cons ul li .x { flex: 0 0 16px; height: 16px; border-radius: 50%; background: rgba(239,68,68,.15);
+                       color: var(--color-bad); display: grid; place-items: center; font-size: .62rem;
+                       font-weight: 700; margin-top: 4px; }
+
+.social-pkgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); margin-top: var(--space-10); }
+@media (max-width: 1100px) { .social-pkgs { grid-template-columns: 1fr; } }
+.social-pkg { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+              padding: var(--space-8); position: relative; }
+.social-pkg.featured { border-color: var(--color-accent); box-shadow: 0 12px 30px rgba(175,203,5,.18); }
+.social-pkg .ribbon { position: absolute; top: -14px; left: var(--space-6); background: var(--color-accent);
+                      color: var(--color-black); font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+                      text-transform: uppercase; padding: .35rem .8rem; border-radius: 999px; }
+.social-pkg .label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em;
+                     color: var(--color-text-muted); margin-bottom: var(--space-3); }
+.social-pkg h4 { font-size: 1.35rem; margin-bottom: var(--space-3); }
+.social-pkg .price { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; line-height: 1; margin-bottom: var(--space-2); }
+.social-pkg .price-sub { font-size: .9rem; color: var(--color-text-muted); margin-bottom: var(--space-6); }
+.social-pkg ul { list-style: none; padding: 0; margin: 0; }
+.social-pkg ul li { padding: var(--space-2) 0; display: flex; gap: var(--space-3); font-size: .92rem; color: var(--color-text); }
+.social-pkg ul li::before { content: "→"; color: var(--color-accent); font-weight: 700; }
+.bundle-note { background: var(--color-accent-light); border: 1px dashed rgba(175,203,5,.5); border-radius: var(--radius);
+               padding: var(--space-5) var(--space-6); margin-top: var(--space-8); display: flex; align-items: center;
+               gap: var(--space-4); font-size: .94rem; color: var(--color-text); }
+.bundle-note strong { font-weight: 700; color: var(--color-accent-dark); }
+
+.timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-5); margin-top: var(--space-10); }
+@media (max-width: 980px) { .timeline { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .timeline { grid-template-columns: 1fr; } }
+.tl-step { background: white; border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-6); }
+.tl-num { font-family: var(--font-display); font-size: 1rem; color: var(--color-accent); font-weight: 700; margin-bottom: var(--space-3); }
+.tl-step h4 { margin-bottom: var(--space-3); font-size: 1.05rem; }
+.tl-step p { color: var(--color-text-muted); font-size: .92rem; margin: 0; }
+.tl-time { margin-top: var(--space-4); font-size: .78rem; color: var(--color-text-light); text-transform: uppercase; letter-spacing: .1em; }
+
+.final { background: linear-gradient(135deg, #0a0a0a 0%, #161616 100%); color: white; text-align: center;
+         padding: var(--space-24) var(--space-6); position: relative; overflow: hidden; }
+.final::before { content: ""; position: absolute; top: -50%; left: 50%; transform: translateX(-50%);
+                 width: 800px; height: 800px;
+                 background: radial-gradient(circle, rgba(175,203,5,.12), transparent 70%); }
+.final-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+.final h2 em { color: var(--color-accent); font-style: italic; }
+.final .lead { color: rgba(255,255,255,.75); margin: 0 auto var(--space-10); }
+.final-cta { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+.final-meta { display: flex; gap: var(--space-10); justify-content: center; flex-wrap: wrap;
+              margin-top: var(--space-12); padding-top: var(--space-10);
+              border-top: 1px solid rgba(255,255,255,.1); font-size: .9rem; color: rgba(255,255,255,.6); }
+
+footer { background: var(--color-black); color: rgba(255,255,255,.6); padding: var(--space-12) var(--space-6);
+         font-size: .85rem; text-align: center; }
+footer .signature { display: flex; align-items: center; justify-content: center; gap: var(--space-3);
+                    margin-bottom: var(--space-3); font-family: var(--font-display); color: white; font-size: 1.05rem; }
+footer a { color: rgba(255,255,255,.7); }
+
+.wa-sticky { position: fixed; bottom: var(--space-5); right: var(--space-5); z-index: 100; background: #25D366;
+             color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center;
+             justify-content: center; box-shadow: 0 8px 30px rgba(37,211,102,.4), 0 4px 12px rgba(0,0,0,.15); }
+.wa-sticky::before { content: ""; position: absolute; inset: -6px; border-radius: 50%;
+                     background: rgba(37,211,102,.4); z-index: -1; animation: wa-pulse 2s ease-out infinite; }
+@keyframes wa-pulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.5); opacity: 0; } }
+.wa-sticky:hover { transform: scale(1.08); }
+.wa-sticky svg { width: 32px; height: 32px; fill: white; }
+.wa-sticky-label { position: absolute; right: 70px; top: 50%; transform: translateY(-50%); background: var(--color-black);
+                   color: white; padding: .55rem 1rem; border-radius: 999px; font-size: .82rem; font-weight: 600;
+                   white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+.wa-sticky:hover .wa-sticky-label { opacity: 1; }
+@media (max-width: 720px) {
+  .wa-sticky { width: 56px; height: 56px; }
+  .wa-sticky svg { width: 28px; height: 28px; }
+  .wa-sticky-label { display: none; }
+  section { padding: var(--space-12) 0; }
+  .hero { padding: var(--space-12) 0 var(--space-10); }
+  body { padding-bottom: 80px; }
+  .brief { padding: var(--space-8); }
+  .pricing-wrap { gap: var(--space-4); }
+  .roi { padding: var(--space-8) var(--space-6); }
+  .hero-cta, .final-cta { flex-direction: column; align-items: stretch; }
+}
+
+/* ─── Paket-Section Styles ─────────────────────────────────────────────────── */
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-10); margin-top: var(--space-16); }
+@media (max-width: 1100px) { .pricing-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; gap: var(--space-8); } }
+
+.pricing-card { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+                padding: var(--space-10); display: flex; flex-direction: column; position: relative;
+                transition: all .3s; box-shadow: var(--shadow); }
+.pricing-card:hover { border-color: var(--color-accent); box-shadow: 0 20px 60px rgba(175,203,5,.12); transform: translateY(-4px); }
+
+.pricing-highlighted { border-color: var(--color-accent); background: linear-gradient(135deg, white 0%, rgba(175,203,5,.03) 100%);
+                       box-shadow: 0 25px 80px rgba(175,203,5,.15); }
+.pricing-highlighted:hover { transform: translateY(-6px); }
+.pricing-badge { position: absolute; top: -12px; left: var(--space-6); background: var(--color-accent);
+                 color: var(--color-black); font-weight: 700; font-size: .72rem; padding: .35rem .85rem;
+                 border-radius: 999px; text-transform: uppercase; letter-spacing: .08em; }
+
+.pricing-header { margin-bottom: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+.pricing-header h3 { margin: 0 0 var(--space-3); }
+.pricing-price { font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; line-height: 1;
+                 color: var(--color-accent); margin: var(--space-4) 0 var(--space-2); }
+.pricing-price .netto { font-size: .65em; font-weight: 500; color: var(--color-text-muted); margin-left: var(--space-2); }
+.pricing-pages { margin: 0; font-size: .95rem; color: var(--color-text-muted); }
+
+.pricing-features { flex: 1; margin: var(--space-8) 0; }
+.pricing-features ul { list-style: none; padding: 0; margin: 0; }
+.pricing-features li { display: flex; gap: var(--space-3); margin-bottom: var(--space-3); font-size: .98rem;
+                       line-height: 1.5; color: var(--color-text); align-items: flex-start; }
+.pricing-features li:last-child { margin-bottom: 0; }
+
+.pricing-maintenance { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-6);
+                      margin: var(--space-6) 0; }
+.maintenance-label { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+                    color: var(--color-text-muted); margin-bottom: var(--space-3); }
+.maintenance-option { font-size: .95rem; font-weight: 500; color: var(--color-text); line-height: 1.4;
+                     margin-bottom: var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.maintenance-option:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.maintenance-option small { display: block; font-size: .82rem; color: var(--color-text-muted); font-weight: 400; margin-top: 3px; }
+.maintenance-recommended { background: rgba(175, 203, 5, .08); padding: var(--space-4); border-radius: var(--radius);
+                          border-left: 3px solid var(--color-accent); }
+
+.pricing-card .btn-secondary { background: white; color: var(--color-text); border: 1px solid var(--color-accent);
+                              width: 100%; justify-content: center; margin-top: auto; }
+.pricing-card .btn-secondary:hover { background: var(--color-accent); color: var(--color-black); }
+.pricing-highlighted .btn-primary { width: 100%; justify-content: center; }
+
+.pricing-footer { margin-top: var(--space-16); padding: var(--space-8); background: var(--color-surface);
+                 border-radius: var(--radius-lg); text-align: center; color: var(--color-text-muted); font-size: .95rem; }
+.pricing-footer strong { color: var(--color-text); }
+
+@media (max-width: 680px) {
+  .pricing-card { padding: var(--space-6); }
+  .pricing-header { margin-bottom: var(--space-4); padding-bottom: var(--space-4); }
+  .pricing-price { font-size: 2.2rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="we-mark" href="https://www.web-emotions.com" target="_blank" rel="noopener">
+      <span class="dot"></span>
+      <span class="we-mark-text">
+        <span class="we-name">WEB&nbsp;EMOTIONS</span>
+        <span class="we-tag">FULLSERVICE</span>
+      </span>
+    </a>
+    <a class="nav-cta" href="#final">Kontakt &rarr;</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 01.06.2026</div>
+      <h1>Bischoff Naturstein.<br>Auftritt heute: <em>67 von 100.</em></h1>
+      <p class="hero-sub">Ich habe mir Ihre Seite live angeschaut. Das Handwerk ist da — aber die Seite lässt es nicht durchkommen. Zu langsam, zu still, zu unsichtbar.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#pricing">Investition ansehen <span class="arrow">&rarr;</span></a>
+        <a class="btn btn-ghost btn-lg" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20https%3A//www.bischoff-naturstein.de.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.868-2.031-.967-.273-.099-.471-.148-.67.149-.197.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Direkt via WhatsApp
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Firma</strong>https://www.bischoff-naturstein.de</div>
+        <div><strong>Standort</strong> </div>
+        <div><strong>Geprüfte Seite</strong>bischoff-naturstein.de</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/we-mascot-wide.jpg" alt="">
+      <div class="hero-tag"><span class="pulse"></span>Live-Audit · 12 Kategorien geprüft · Score 67/100</div>
+    </div>
+  </div>
+</header>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" style="color: var(--color-text-muted);">Was mir aufgefallen ist</div>
+      <h2>Beim Reinschauen<br>hab ich folgendes gesehen.</h2>
+    </div>
+    <div class="brief">
+      <div class="brief-from">
+        <img src="assets/we-patrick.jpg" alt="Patrick Rupp">
+        <div>
+          <div class="label">Vom Schreibtisch von</div>
+          <div class="name">Patrick Rupp · WebEmotions</div>
+        </div>
+      </div>
+      <p>Beim Reinschauen ist mir sofort aufgefallen: Bischoff Naturstein hat offensichtlich echte Substanz — Naturstein-Arbeiten sind ein handwerklich anspruchsvolles Feld, und das spürt man zumindest im Ansatz. Aber die Seite kämpft gegen sich selbst. Bilder ohne Beschreibung, keine saubere Überschriften-Struktur, eine Ladezeit die auf dem Handy über 10 Sekunden geht — das ist kein Kleinigkeit, das ist der erste Eindruck den ein Interessent bekommt, bevor er überhaupt Ihre Arbeit gesehen hat.</p><p>Was wirklich da ist: ein Unternehmen mit erkennbarer Erfahrung im Naturstein-Bereich. Was nicht ankommt: genau das. Google findet die Seite kaum strukturiert, Bilder bleiben für Suchmaschinen unsichtbar, und Sicherheits-Einstellungen fehlen, die heute schlicht Standard sein sollten. Ein potenzieller Kunde der auf dem Handy sucht, wartet — und wechselt im Zweifel zur Konkurrenz bevor die Seite fertig geladen hat.</p><p>Ich hab die wichtigsten Bremsen unten aufgelistet, schauen Sie sich das in Ruhe an. Wenn etwas unklar ist oder Sie direkt wissen wollen was ein Schritt kosten würde — rufen Sie an oder schreiben mir kurz via WhatsApp.</p>
+      <p class="sig">— Patrick</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- NEUE SEKTION: 15 Kategorien mit Gewichtung -->
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Die Analyse</div>
+      <h2>15 Kriterien.<br>Intelligent gewichtet.</h2>
+      <p class="lead">Nicht alle Fehler wiegen gleich. Speed, Mobile, Security und DSGVO machen 52% der Gewichtung aus — weil diese 4 Faktoren entscheiden, ob ein Kunde anruft oder nicht.</p>
+    </div>
+    <div style="display: grid; gap: var(--space-8);">
+      <!-- Kategorien Grid -->
+      <div id="categories-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-6);">
+        <!-- Wird via JavaScript gefüllt aus [{"id": "a11y", "name": "Accessibility (a11y)", "score": 65, "status": "warn", "text": "Die Seite ist schwer zu nutzen für Menschen mit Behinderungen oder Sehschwäche."}, {"id": "links", "name": "Link-Gesundheit", "score": 100, "status": "ok", "text": "Es gibt zu viele fehlerhafte Links oder 404-Fehler auf der Seite."}, {"id": "robots", "name": "Robots & Crawlability", "score": 100, "status": "ok", "text": "Die robots.txt oder Sitemap fehlt. Google kann Ihre Seite nicht richtig durchsuchen."}, {"id": "speed", "name": "Ladegeschwindigkeit", "score": 57, "status": "bad", "text": "Ihre Website braucht zu lange zum Laden. Besucher verlassen die Seite, wenn sie länger als 3 Sekunden dauert."}, {"id": "mobile", "name": "Mobile Optimierung", "score": 60, "status": "warn", "text": "Die Seite sieht auf Smartphones nicht optimal aus oder ist schwer zu bedienen."}, {"id": "seo", "name": "SEO Grundlagen", "score": 88, "status": "ok", "text": "Google findet Ihre Inhalte nicht richtig. Deshalb erscheinen Sie nicht bei relevanten Suchvorgängen."}, {"id": "h1h2", "name": "H1/H2 Struktur", "score": 8, "status": "bad", "text": "Die Seitenstruktur (Überschriften) ist nicht korrekt. Google versteht die Hierarchie nicht."}, {"id": "text", "name": "Textlängen & Qualität", "score": 88, "status": "ok", "text": "Die Texte sind zu kurz oder schwach. Besucher verstehen nicht sofort, was Sie anbieten."}, {"id": "alt", "name": "Alt-Texte & Bilder", "score": 22, "status": "bad", "text": "Bilder haben keine Beschreibungen für Google und Menschen mit Sehbehinderung."}, {"id": "filenames", "name": "Bilddateinamen", "score": 90, "status": "ok", "text": "Bilddateinamen sind unklar. Das ist schlecht für SEO und Barrierefreiheit."}, {"id": "meta", "name": "Meta Tags (Social)", "score": 100, "status": "ok", "text": "Meta-Tags (Vorschaubilder in WhatsApp/Facebook) sind nicht korrekt ausgefüllt."}, {"id": "security", "name": "Sicherheit & Server", "score": 30, "status": "bad", "text": "Es fehlen wichtige Sicherheits-Einstellungen. Das birgt Vertrauensverlust."}, {"id": "caching", "name": "Caching & Infrastruktur", "score": 25, "status": "bad", "text": "Bilder und Code werden nicht intelligent zwischengespeichert. Das macht die Seite langsamer."}, {"id": "dsgvo", "name": "DSGVO & Rechtliches", "score": 100, "status": "ok", "text": "Die Datenschutz-Einstellungen sind nicht vollständig. Das birgt rechtliche Risiken."}, {"id": "tech", "name": "Technischer Eindruck", "score": 100, "status": "ok", "text": "Technische Probleme beeinträchtigen die Benutzer-Erfahrung und das Ranking."}] -->
+      </div>
+      <!-- Gewichtungs-Legende -->
+      <div style="background: white; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8); margin-top: var(--space-4);">
+        <h4 style="margin-top: 0; margin-bottom: var(--space-6);">So funktioniert die Gewichtung</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6); font-size: 0.95rem;">
+          <div>
+            <div style="font-weight: 600; color: var(--color-accent); margin-bottom: var(--space-2);">⭐ 52% Kritisch</div>
+            <p style="margin: 0; color: var(--color-text-muted);">Speed (15%), Mobile (15%), Security (12%), DSGVO (10%) — diese 4 Faktoren sind das Fundament.</p>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: var(--color-warn); margin-bottom: var(--space-2);">🎯 30% Wichtig</div>
+            <p style="margin: 0; color: var(--color-text-muted);">SEO (10%), Accessibility (7%), H1/H2 (5%), Alt-Texte (5%), Caching (5%) — für Sichtbarkeit & UX.</p>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: #6B9B6B; margin-bottom: var(--space-2);">💡 18% Nice-to-Have</div>
+            <p style="margin: 0; color: var(--color-text-muted);">Textqualität (5%), Meta-Tags (3%), Links (4%), Robots (3%), Filenames (3%), Tech (1%) — Optimierung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const categoriesJson = '[{"id": "a11y", "name": "Accessibility (a11y)", "score": 65, "status": "warn", "text": "Die Seite ist schwer zu nutzen für Menschen mit Behinderungen oder Sehschwäche."}, {"id": "links", "name": "Link-Gesundheit", "score": 100, "status": "ok", "text": "Es gibt zu viele fehlerhafte Links oder 404-Fehler auf der Seite."}, {"id": "robots", "name": "Robots & Crawlability", "score": 100, "status": "ok", "text": "Die robots.txt oder Sitemap fehlt. Google kann Ihre Seite nicht richtig durchsuchen."}, {"id": "speed", "name": "Ladegeschwindigkeit", "score": 57, "status": "bad", "text": "Ihre Website braucht zu lange zum Laden. Besucher verlassen die Seite, wenn sie länger als 3 Sekunden dauert."}, {"id": "mobile", "name": "Mobile Optimierung", "score": 60, "status": "warn", "text": "Die Seite sieht auf Smartphones nicht optimal aus oder ist schwer zu bedienen."}, {"id": "seo", "name": "SEO Grundlagen", "score": 88, "status": "ok", "text": "Google findet Ihre Inhalte nicht richtig. Deshalb erscheinen Sie nicht bei relevanten Suchvorgängen."}, {"id": "h1h2", "name": "H1/H2 Struktur", "score": 8, "status": "bad", "text": "Die Seitenstruktur (Überschriften) ist nicht korrekt. Google versteht die Hierarchie nicht."}, {"id": "text", "name": "Textlängen & Qualität", "score": 88, "status": "ok", "text": "Die Texte sind zu kurz oder schwach. Besucher verstehen nicht sofort, was Sie anbieten."}, {"id": "alt", "name": "Alt-Texte & Bilder", "score": 22, "status": "bad", "text": "Bilder haben keine Beschreibungen für Google und Menschen mit Sehbehinderung."}, {"id": "filenames", "name": "Bilddateinamen", "score": 90, "status": "ok", "text": "Bilddateinamen sind unklar. Das ist schlecht für SEO und Barrierefreiheit."}, {"id": "meta", "name": "Meta Tags (Social)", "score": 100, "status": "ok", "text": "Meta-Tags (Vorschaubilder in WhatsApp/Facebook) sind nicht korrekt ausgefüllt."}, {"id": "security", "name": "Sicherheit & Server", "score": 30, "status": "bad", "text": "Es fehlen wichtige Sicherheits-Einstellungen. Das birgt Vertrauensverlust."}, {"id": "caching", "name": "Caching & Infrastruktur", "score": 25, "status": "bad", "text": "Bilder und Code werden nicht intelligent zwischengespeichert. Das macht die Seite langsamer."}, {"id": "dsgvo", "name": "DSGVO & Rechtliches", "score": 100, "status": "ok", "text": "Die Datenschutz-Einstellungen sind nicht vollständig. Das birgt rechtliche Risiken."}, {"id": "tech", "name": "Technischer Eindruck", "score": 100, "status": "ok", "text": "Technische Probleme beeinträchtigen die Benutzer-Erfahrung und das Ranking."}]';
+  if (!categoriesJson) return;
+  try {
+    const categories = JSON.parse(categoriesJson);
+    const container = document.getElementById('categories-container');
+
+    // Gruppiere nach Gewichtung
+    const weights = {
+      'speed': {w: 0.15, label: '15%', group: 'Kritisch'},
+      'mobile': {w: 0.15, label: '15%', group: 'Kritisch'},
+      'security': {w: 0.12, label: '12%', group: 'Kritisch'},
+      'dsgvo': {w: 0.10, label: '10%', group: 'Kritisch'},
+      'seo': {w: 0.10, label: '10%', group: 'Wichtig'},
+      'a11y': {w: 0.07, label: '7%', group: 'Wichtig'},
+      'caching': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'alt': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'text': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'h1h2': {w: 0.05, label: '5%', group: 'Wichtig'},
+      'links': {w: 0.04, label: '4%', group: 'Nice-to-Have'},
+      'robots': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'meta': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'filenames': {w: 0.03, label: '3%', group: 'Nice-to-Have'},
+      'tech': {w: 0.03, label: '3%', group: 'Nice-to-Have'}
+    };
+
+    // Sortiere Kategorien nach Gewichtung (absteigend)
+    const sorted = [...categories].sort((a, b) => {
+      const wA = weights[a.id]?.w || 0.01;
+      const wB = weights[b.id]?.w || 0.01;
+      return wB - wA;
+    });
+
+    sorted.forEach(cat => {
+      const weight = weights[cat.id] || {w: 0.01, label: '1%', group: 'Nice-to-Have'};
+      const colors = {ok: '#22c55e', warn: '#f59e0b', bad: '#ef4444'};
+      const color = colors[cat.status] || '#888';
+      const isCritical = weight.group === 'Kritisch';
+      const borderStyle = isCritical ? 'border: 2px solid ' + color : 'border: 1px solid ' + color;
+
+      const html = `
+        <div style="background: white; ${borderStyle}; border-radius: var(--radius-lg); padding: var(--space-6); position: relative; min-height: 280px; display: flex; flex-direction: column;">
+          <div style="position: absolute; top: 8px; right: 12px; background: ${color}; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;">
+            ${weight.label}
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-4); padding-right: 60px;">
+            <div style="font-weight: 600; font-size: 1.05rem;">${cat.name}</div>
+            <div style="font-size: 1.8rem; font-weight: 700; color: ${color}; white-space: nowrap; margin-left: var(--space-4);">${cat.score}</div>
+          </div>
+          <div style="background: #f5f5f5; border-radius: 4px; height: 6px; margin-bottom: var(--space-4);">
+            <div style="background: ${color}; height: 100%; border-radius: 4px; width: ${cat.score}%;" />
+          </div>
+          <div style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: var(--space-4); flex-grow: 1;">
+            ${cat.text}
+          </div>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: auto;">
+            <span style="display: inline-block; background: ${color === '#22c55e' ? 'rgba(34,197,94,0.1)' : color === '#f59e0b' ? 'rgba(245,158,11,0.1)' : 'rgba(239,68,68,0.1)'}; color: ${color}; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
+              ${cat.status === 'ok' ? '✓ OK' : cat.status === 'warn' ? '⚠ Warnung' : '✕ Kritisch'}
+            </span>
+            ${isCritical ? '<span style="display: inline-block; background: var(--color-accent-light); color: var(--color-accent-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">★ Priorität</span>' : ''}
+          </div>
+        </div>
+      `;
+      container.innerHTML += html;
+    });
+  } catch(e) {
+    console.error('Fehler beim Laden der Kategorien:', e);
+  }
+})();
+</script>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Status Quo</div>
+      <h2>Fünf Bremsen, die heute<br>Anfragen <em>kosten</em>.</h2>
+      <p class="lead">Aus 12 geprüften Kategorien sind das die fünf, die am stärksten gewichten — und gleichzeitig die, die am schnellsten zu beheben sind.</p>
+    </div>
+    <div class="audit-grid">
+      <div class="audit-screenshot">
+        <div class="tag">Vorher · Live-Aufnahme</div>
+        <img src="https://image.thum.io/get/width/1200/crop/900/png/https://www.bischoff-naturstein.de" alt="Aktuelle Website bischoff-naturstein.de">
+      </div>
+      <ol class="audit-list">
+        <li><div class="ix">1</div><div><div class="title">Seite lädt viel zu langsam</div><div class="desc">Auf dem Handy dauert es über 10 Sekunden bis der wichtigste Inhalt sichtbar wird. Das ist kein technisches Detail — Interessenten warten nicht. Die meisten sind weg bevor sie überhaupt ein Bild Ihrer Naturstein-Arbeiten gesehen haben. Intelligentes Laden und ein paar Server-Einstellungen würden hier viel retten.</div></div></li>
+        <li><div class="ix">2</div><div><div class="title">Keine Haupt-Überschrift auf der Seite</div><div class="desc">Google sucht auf jeder Seite nach einer klaren Haupt-Überschrift (vergleichbar mit dem Titel eines Zeitungsartikels) — auf Ihrer Seite fehlt diese komplett. Das bedeutet: die Suchmaschine weiß nicht worum es auf der Seite geht, und stuft sie entsprechend niedrig ein. Für ein lokales Handwerksunternehmen kostet das bares Geld in Form von Anfragen die woanders landen.</div></div></li>
+        <li><div class="ix">3</div><div><div class="title">26 Bilder ohne Beschreibung</div><div class="desc">Fast alle Ihre Bilder — vermutlich darunter Fotos Ihrer schönsten Naturstein-Arbeiten — haben keinen erklärenden Text hinterlegt. Google kann Bilder nicht sehen, nur lesen. Ohne Beschreibung sind diese Bilder für die Suchmaschine unsichtbar, und auch Menschen mit Seheinschränkungen können nichts damit anfangen. Das ist verschenktes Potenzial.</div></div></li>
+        <li><div class="ix">4</div><div><div class="title">Sicherheits-Zertifikat unvollständig konfiguriert</div><div class="desc">Die verschlüsselte Verbindung ist zwar vorhanden, aber mehrere Sicherheits-Einstellungen fehlen, die Browser und Suchmaschinen heute erwarten. Das kann dazu führen, dass manche Browser eine Warnung anzeigen — und Besucher abspringen bevor sie Ihre Seite auch nur gelesen haben. Vertrauen geht schnell verloren.</div></div></li>
+        <li><div class="ix">5</div><div><div class="title">Kein intelligentes Laden eingerichtet</div><div class="desc">Ihre Seite lädt bei jedem Besuch alles neu — es wird nichts zwischengespeichert. Für eine Seite mit vielen Bildern (Naturstein-Projekte leben von Fotos) bedeutet das: jeder Besucher wartet jedes Mal aufs Neue. Mit einfachem Caching würde die Seite beim zweiten Besuch spürbar schneller werden — und auch Google bewertet das positiv.</div></div></li>
+      </ol>
+    </div>
+    <div class="scorecards">
+      <div class="scorecard ok">
+        <div class="label">Gesamt-Score</div>
+        <div class="num">67<span style="font-size: 1.2rem; color: var(--color-text-muted);">/100</span></div>
+        <div class="hint">akzeptabel, aber Hebel vorhanden</div>
+      </div>
+      <div class="scorecard bad">
+        <div class="label">Sichtbarkeit lokal</div>
+        <div class="num">∅</div>
+        <div class="hint">nicht in Top-10 bei „None "</div>
+      </div>
+      <div class="scorecard warn">
+        <div class="label">Anfrage-Pfade</div>
+        <div class="num">1/5</div>
+        <div class="hint">nur Telefon, kein Knopf prominent</div>
+      </div>
+      <div class="scorecard bad">
+        <div class="label">Trust-Signale</div>
+        <div class="num">2/10</div>
+        <div class="hint">keine Bewertungen, keine Referenzen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Designvorschau</div>
+      <h2>So könnte Ihre neue<br>Website aussehen.</h2>
+      <p class="lead">Ein Konzept, keine fertige Seite. Damit Sie sehen wohin die Richtung geht — und wir gemeinsam entscheiden, was bleibt und was anders wird.</p>
+    </div>
+    <div class="compare">
+      <div class="compare-card">
+        <div class="badge old">Heute</div>
+        <div class="visual"><img src="https://image.thum.io/get/width/1000/crop/700/png/https://www.bischoff-naturstein.de" alt="Aktuelle Website"></div>
+        <div class="meta"><h4><a href="https://www.bischoff-naturstein.de" target="_blank" rel="noopener">bischoff-naturstein.de</a></h4><p>Veraltete Optik, keine sichtbare Möglichkeit für eine Anfrage. Mobile-Bedienung schwierig.</p></div>
+      </div>
+      <div class="compare-card">
+        <div class="badge new">Konzept</div>
+        <div class="visual"><img src="assets/mockup-desktop.png" alt="Konzept der neuen Website auf einem Monitor"></div>
+        <div class="meta"><h4>Konzept der neuen Startseite</h4><p>Klares Layout, sofort erkennbare Leistungen, prominenter Anfrage-Knopf. Vertrauen ab der ersten Sekunde.</p></div>
+      </div>
+    </div>
+    <div class="mobile-showcase">
+      <div class="phone-wrap"><img src="assets/mockup-mobile.png" alt="Mobile-Vorschau der neuen Website"></div>
+      <div>
+        <div class="eyebrow">Auch auf dem Smartphone</div>
+        <h3 style="margin-bottom: var(--space-5);">Mobile-first.<br>Weil Ihre Kunden mit dem Daumen suchen.</h3>
+        <p style="color: var(--color-text-muted); font-size: 1.05rem; margin-bottom: var(--space-4);">
+          „None " wird heute zu über 70 % vom Handy gegoogelt. Die neue Seite ist von Anfang an für den Daumen gebaut: großer Anfrage-Knopf, mit einem Tippen anrufen, alles lesbar ohne Zoom.
+        </p>
+        <div class="mobile-stats">
+          <div class="mobile-stat"><div class="num">70 %</div><div class="text">aller lokalen Suchen kommen vom Smartphone</div></div>
+          <div class="mobile-stat"><div class="num">&lt; 2s</div><div class="text">Ziel-Ladezeit für mobile Erst-Eindrücke</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Investition</div>
+      <h2>Drei Pakete.<br>Festpreis. Keine Überraschungen.</h2>
+      <p class="lead">Alle Pakete enthalten eine komplett neue Seite (kein Aufbügeln einer alten). Der Unterschied liegt im Umfang von SEO, Inhalten und dem Service danach.</p>
+    </div>
+    <div class="pricing-wrap">
+      <div class="price-card">
+        
+        <div class="label">01 · BASIS REDESIGN</div>
+        <h3>Saubere neue Seite,<br>solide Grundlage.</h3>
+        <p class="summary">Komplett neuer Auftritt. Sauber, mobile-first, rechtssicher. Bis zu 5 Unterseiten.</p>
+        <div class="price-line"><span class="price-num">1.800&nbsp;€</span><span class="price-unit">netto</span></div>
+        <p class="price-detail">2.142,00 € brutto (inkl. 19 % MwSt.) · einmalig</p>
+        <ul>
+          <li><span class="check">✓</span> Komplettes Redesign &amp; Programmierung</li>
+          <li><span class="check">✓</span> Mobile-First Layout (Smartphone &amp; Tablet)</li>
+          <li><span class="check">✓</span> Texte übernommen &amp; optimiert</li>
+          <li><span class="check">✓</span> Schnelle Ladezeit (Google-freundlich)</li>
+          <li><span class="check">✓</span> Sicherheits-Zertifikat (HTTPS / SSL)</li>
+          <li><span class="check">✓</span> Liveschaltung in 3–5 Wochen</li>
+        </ul>
+        <div class="price-cons">
+          <div class="price-cons-label">Monatliche Wartung:</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">29 € / Monat<br><small style="color: var(--color-text-muted);">1 Stunde Änderungen &amp; Updates</small></div>
+        </div>
+      </div>
+      <div class="price-card featured">
+        <div class="ribbon">Empfohlen für Sie</div>
+        <div class="label">02 · PROFESSIONELL SEO</div>
+        <h3>Mit lokaler Sichtbarkeit<br>und fertigen Inhalten.</h3>
+        <p class="summary">Alles aus Paket 01 — plus echte Sichtbarkeit bei Google, fertige Texte und Trust-Aufbau. Bis zu 8 Unterseiten.</p>
+        <div class="price-line"><span class="price-num">2.500&nbsp;€</span><span class="price-unit">netto</span></div>
+        <p class="price-detail">2.975,00 € brutto · einmalig</p>
+        <ul>
+          <li><span class="check">✓</span> Alles aus Paket 01</li>
+          <li><span class="check">✓</span> Lokale SEO (On-Page komplett)</li>
+          <li><span class="check">✓</span> Google Business Profile Setup</li>
+          <li><span class="check">✓</span> Leistungsseiten neu geschrieben (SEO)</li>
+          <li><span class="check">✓</span> Open Graph Tags (Social Media Preview)</li>
+          <li><span class="check">✓</span> Bewertungsstrategie für Google</li>
+          <li><span class="check">✓</span> Strukturierte Daten (Schema Markup)</li>
+        </ul>
+        <div class="price-cons">
+          <div class="price-cons-label">Monatliche Wartung (wähle eine):</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">
+            29 € / Monat — <small style="color: var(--color-text-muted);">1 Stunde Änderungen</small><br>
+            <strong style="color: var(--color-accent);">59 € / Monat — <small style="color: var(--color-text-muted);">bis zu 2 Stunden (empfohlen)</small></strong>
+          </div>
+        </div>
+      </div>
+      <div class="price-card">
+        
+        <div class="label">03 · PREMIUM MIT KI &amp; KALENDER</div>
+        <h3>Webseite + Social Media<br>komplett aus einer Hand.</h3>
+        <p class="summary">Alles aus Paket 02 — plus: KI-Sichtbarkeit, Buchungskalender, Monatl. Reports. Bis zu 15 Unterseiten.</p>
+        <div class="price-line"><span class="price-num">3.500&nbsp;€</span><span class="price-unit">netto</span></div>
+        <p class="price-detail">4.165,00 € brutto · einmalig</p>
+        <ul>
+          <li><span class="check">✓</span> Alles aus BASIS &amp; PROFESSIONELL +</li>
+          <li><span class="check">✓</span> KI-Assistent Sichtbarkeit (ChatGPT, Gemini)</li>
+          <li><span class="check">✓</span> Erweiterte Google Suchstrategien</li>
+          <li><span class="check">✓</span> Keyword-Research &amp; Clustering</li>
+          <li><span class="check">✓</span> Monatl. Sichtbarkeitsbericht (Jahr 1)</li>
+          <li><span class="check">✓</span> Komplette Text-Optimierung</li>
+          <li><span class="check">✓</span> Buchungskalender + Firmenkalender-Integration</li>
+          <li><span class="check">✓</span> Professionelle Bildintegration</li>
+        </ul>
+        <div class="price-cons">
+          <div class="price-cons-label">Monatliche Wartung:</div>
+          <div style="padding: var(--space-3) 0; color: var(--color-text); font-weight: 500;">59 € / Monat<br><small style="color: var(--color-text-muted);">bis zu 2 Stunden Änderungen &amp; Optimierungen</small></div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: var(--space-10); color: var(--color-text-muted); font-size: .95rem;">
+      Ratenzahlung über 24 Monate ist auf Anfrage möglich — einfach kurz Bescheid geben.
+    </p>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Plus: Social Media</div>
+      <h2>Wir übernehmen das komplett —<br>Sie haben keinen Stress damit.</h2>
+      <p class="lead">Sie schicken uns ab und zu ein paar Fotos vom letzten Projekt. Wir machen den Rest: Posts schreiben, Bilder zuschneiden, posten, antworten.</p>
+    </div>
+    <div class="social-pkgs">
+      <div class="social-pkg">
+        <div class="label">Starter</div><h4>Konstant präsent</h4>
+        <div class="price">125&nbsp;€</div><div class="price-sub">netto / Monat · 1 Kanal</div>
+        <ul><li>4 Posts pro Monat</li><li>1 Kanal (Facebook oder Instagram)</li><li>Bildbearbeitung &amp; Hashtags</li><li>Antwort-Service auf Kommentare</li></ul>
+      </div>
+      <div class="social-pkg featured">
+        <div class="ribbon">Empfohlen</div>
+        <div class="label">Growth</div><h4>Sichtbar wachsen</h4>
+        <div class="price">249&nbsp;€</div><div class="price-sub">netto / Monat · 2 Kanäle</div>
+        <ul><li>8 Posts pro Monat</li><li>Facebook + Instagram parallel</li><li>1 Reel pro Monat (Schnitt + Vertonung)</li><li>Story-Posts wöchentlich</li><li>Monatliches Reporting</li></ul>
+      </div>
+      <div class="social-pkg">
+        <div class="label">Pro</div><h4>Voll im Blick</h4>
+        <div class="price">439&nbsp;€</div><div class="price-sub">netto / Monat · 3 Kanäle</div>
+        <ul><li>12 Posts pro Monat</li><li>3 Kanäle (FB, IG, Google)</li><li>2 Reels pro Monat</li><li>Stories &amp; Engagement-Management</li><li>Strategiegespräch quartalsweise</li></ul>
+      </div>
+    </div>
+    <div class="bundle-note">
+      <strong>Bundle-Rabatt:</strong> Bei Buchung mit Paket 03 (Premium-Webseite) entfällt der Setup-Aufwand und die ersten 3 Monate Posting sind in der Webseite-Investition enthalten. Sie starten also direkt — ohne Doppel-Rechnung.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Was realistisch ist</div>
+      <h2>Was eine neue Seite<br>typischerweise <em>bringt</em>.</h2>
+      <p class="lead">Ich hab mir mal angeschaut, was bei einem Betrieb wie Ihrem im Raum Heilbronn/Ludwigsburg realistisch wäre. Kein Versprechen — eine Range, basierend auf vergleichbaren Projekten.</p>
+    </div>
+    <div class="roi">
+      <div class="roi-grid">
+        <div class="roi-card"><div class="label">Anfragen / Monat</div><div class="num">+<span class="acc">3–8</span></div><div class="detail">durch lokale Sichtbarkeit + klaren Anfrage-Pfad</div></div>
+        <div class="roi-card"><div class="label">Conv-Rate Besucher → Anfrage</div><div class="num">~<span class="acc">30 %</span></div><div class="detail">heute geschätzt unter 5 % durch fehlende Anfrage-Knöpfe</div></div>
+        <div class="roi-card"><div class="label">Ø Kundenwert / Jahr</div><div class="num"><span class="acc">750 €</span></div><div class="detail">Annahme für None-Stammkundschaft</div></div>
+        <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">8 – 18 k €</span></div><div class="detail">konservativ kalkuliert · keine Garantie</div></div>
+      </div>
+      <p class="roi-disclaimer">Annahmen basieren auf Marktdaten für den Raum, in dem Naturstein-Betriebe dieser Größe typischerweise aktiv sind — mittlerer Wettbewerb, lokale Suchanfragen mit realem Anfragepotenzial. Ich hab konservativ gerechnet: keine Garantie, keine erste-Position-Versprechen — nur eine ehrliche Größenordnung was realistisch drin ist, wenn die größten Bremsen wegfallen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Ablauf</div>
+      <h2>Von Start bis Liveschaltung:<br>3–5&nbsp;Wochen.</h2>
+      <p class="lead">Sie haben einen Ansprechpartner — mich. Kein Projektmanager dazwischen. Termine flexibel, abends oder Samstag wenn's passt.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-step"><div class="tl-num">01</div><h4>Start</h4><p>Ein Gespräch (vor Ort oder Telefon). Ich nehme alles auf, was an Inhalt da ist.</p><div class="tl-time">Tag 1</div></div>
+      <div class="tl-step"><div class="tl-num">02</div><h4>Konzept &amp; Design</h4><p>Erster Entwurf. Sie schauen sich's an, geben Feedback — wir feilen.</p><div class="tl-time">Woche 1–2</div></div>
+      <div class="tl-step"><div class="tl-num">03</div><h4>Umsetzung</h4><p>Seite wird gebaut, Texte geschrieben, Bilder optimiert.</p><div class="tl-time">Woche 2–3</div></div>
+      <div class="tl-step"><div class="tl-num">04</div><h4>Test &amp; Feinschliff</h4><p>Mobile-Tests, Korrekturen, Sie schauen nochmal drüber.</p><div class="tl-time">Woche 3–4</div></div>
+      <div class="tl-step"><div class="tl-num">05</div><h4>Liveschaltung</h4><p>Neue Seite geht online. Übergabe-Termin vor Ort.</p><div class="tl-time">Woche 4–5</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="final" class="final">
+  <div class="final-inner">
+    <div class="eyebrow" style="color: var(--color-accent); justify-content: center; display: flex;">Nächster Schritt</div>
+    <h2>Lust auf <em>15 Minuten Telefon</em>?</h2>
+    <p class="lead">Kein Verkaufsgespräch. Wir schauen gemeinsam auf Ihre Seite, ich zeige die größten Hebel, Sie entscheiden danach. Wenn's nicht passt — auch okay.</p>
+    <div class="final-cta">
+      <a class="btn btn-primary btn-lg" href="tel:+491796152161"><span>📞</span> 0179 615 2161</a>
+      <a class="btn btn-whatsapp btn-lg" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20https%3A//www.bischoff-naturstein.de.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.868-2.031-.967-.273-.099-.471-.148-.67.149-.197.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn-ghost btn-lg" href="mailto:hallo@web-emotions.com?subject=Dein%20Angebot%3A%20https%3A//www.bischoff-naturstein.de">✉ hallo@web-emotions.com</a>
+    </div>
+    <div class="final-meta">
+      <div>Patrick Rupp · WebEmotions</div>
+      <div>Webdesign aus Heilbronn / Oberstenfeld</div>
+      <div><a href="https://www.web-emotions.com" target="_blank" rel="noopener">web-emotions.com</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="signature"><span style="color: var(--color-accent);">●</span> WEB&nbsp;EMOTIONS · PATRICK&nbsp;RUPP</div>
+  <div>Webdesign-Audit erstellt am 01.06.2026 · Daten aus Live-Analyse von bischoff-naturstein.de</div>
+  <div style="margin-top: var(--space-3);"><a href="https://www.web-emotions.com">web-emotions.com</a> · <a href="tel:+491796152161">0179 615 2161</a></div>
+</footer>
+
+<a class="wa-sticky" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20https%3A//www.bischoff-naturstein.de.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener" aria-label="WhatsApp-Nachricht an Patrick senden">
+  <span class="wa-sticky-label">Direkt via WhatsApp schreiben</span>
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.588-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l.413.66-1.084 3.957 4.05-1.064.6.388zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.296-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+
+</body>
+</html>
