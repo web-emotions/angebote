@@ -364,6 +364,25 @@ footer a { color: rgba(255,255,255,.7); }
   .pricing-header { margin-bottom: var(--space-4); padding-bottom: var(--space-4); }
   .pricing-price { font-size: 2.2rem; }
 }
+
+/* Hosting */
+.hosting-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-8); margin-top: var(--space-12); align-items: start; }
+@media (max-width: 900px) { .hosting-wrap { grid-template-columns: 1fr; gap: var(--space-6); } }
+.hosting-karte { background: white; border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-lg); padding: var(--space-8); }
+.hosting-kopf { padding-bottom: var(--space-5); margin-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
+.hosting-kopf .label { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-text-muted); }
+.hosting-kopf h4 { font-family: 'Fraunces', serif; font-size: 1.4rem; margin: var(--space-2) 0 var(--space-4); }
+.hosting-kopf .price { font-size: 2.4rem; font-weight: 700; line-height: 1; }
+.hosting-kopf .price-sub { color: var(--color-text-muted); font-size: .9rem; margin-top: var(--space-1); }
+.hosting-liste { list-style: none; padding: 0; margin: 0; }
+.hosting-liste li { display: flex; gap: var(--space-3); padding: var(--space-2) 0; font-size: .95rem; line-height: 1.5; }
+.hosting-erweiterung { margin-top: var(--space-5); padding-top: var(--space-5); border-top: 1px dashed var(--color-border);
+  font-size: .9rem; color: var(--color-text-muted); line-height: 1.6; }
+.hosting-hinweis { padding: var(--space-6) 0; }
+.hosting-hinweis h4 { font-family: 'Fraunces', serif; font-size: 1.15rem; margin: 0 0 var(--space-4); }
+.hosting-hinweis p { font-size: .95rem; line-height: 1.75; color: var(--color-text-muted); margin: 0 0 var(--space-4); }
+.hosting-klein { font-size: .87rem !important; padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
 </style>
 </head>
 <body>
@@ -386,7 +405,7 @@ footer a { color: rgba(255,255,255,.7); }
     <div>
       <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 13.10.2026</div>
       <h1>Moroff & Degel.<br>Ein Sanitärbetrieb aus Renningen,<br>den <em>Google kaum findet</em>.</h1>
-      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Das handwerkliche Know-how ist da — nur kommt es online so gut wie nicht an.</p>
+      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Das handwerkliche Können ist da — nur kommt es digital kaum noch rüber.</p>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="#pricing">Investition ansehen <span class="arrow">&rarr;</span></a>
         <a class="btn btn-ghost btn-lg" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20Moroff%20%26%20Degel%20GbR.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener">
@@ -439,7 +458,7 @@ footer a { color: rgba(255,255,255,.7); }
           <div class="name">Patrick Rupp · WebEmotions</div>
         </div>
       </div>
-      <p>Beim Reinschauen ist mir sofort aufgefallen: Moroff & Degel hat offenbar langjährige Erfahrung im Sanitärbereich — aber die Website gibt das kaum wieder. Wenige Zeilen Text, Bilder ohne Beschriftung, und Google bekommt schlicht zu wenig Informationen, um die Seite irgendjemandem in Renningen und Umgebung zu zeigen.</p><p>Das eigentliche Problem: Die Seite ist technisch so aufgestellt, dass Suchmaschinen sie kaum lesen können. Kein H1-Titel, keine Sitemap, keine robots.txt — Google weiß nicht, was hier angeboten wird und für wen. Dazu lädt die Seite merklich langsam, was dazu führt, dass Besucher abspringen, bevor sie überhaupt Ihren Namen gelesen haben. Das kostet konkret Anfragen.</p><p>Weiter unten habe ich die fünf größten Bremsen aufgelistet — schauen Sie sich das in Ruhe an. Wenn etwas unklar ist oder Sie direkt wissen wollen, was der nächste sinnvolle Schritt wäre: Rufen Sie an oder schreiben Sie mir via WhatsApp. Das geht schnell.</p>
+      <p>Beim Reinschauen ist mir sofort aufgefallen: Die Seite von Moroff & Degel existiert, aber sie ist für Google praktisch unsichtbar. Keine Sitemap, keine robots.txt — das bedeutet, Google weiß nicht mal, wo es anfangen soll, Ihre Seite zu lesen. Dazu fehlt ein H1-Titel komplett. Das ist die eine Zeile, die Google als erstes sucht, um zu verstehen, worum es auf einer Seite geht. Bei Ihnen: nicht vorhanden.</p><p>Was wirklich schade ist: Ein Sanitärbetrieb mit Standort in Renningen hat lokal echtes Potenzial. Wer in der Region einen Klempner oder Sanitärfachmann sucht, tippt das in Google — und landet derzeit wahrscheinlich beim Mitbewerber. Nicht weil Ihr Betrieb schlechter ist, sondern weil die Seite die falschen Signale sendet. Sechs von neun Bildern haben keinen beschreibenden Text, die Seite lädt über sechs Sekunden — das sind keine Kleinigkeiten.</p><p>Weiter unten habe ich die fünf größten Bremsen aufgeschrieben, die ich gefunden habe. Wenn etwas unklar ist oder Sie direkt wissen wollen, was das konkret kostet und bringt — rufen Sie an oder schreiben mir kurz via WhatsApp.</p>
       <p class="sig">— Patrick</p>
     </div>
   </div>
@@ -567,11 +586,11 @@ footer a { color: rgba(255,255,255,.7); }
         <img src="https://image.thum.io/get/width/1200/crop/900/png/https://www.moroffdegel.de/" alt="Aktuelle Website moroffdegel.de">
       </div>
       <ol class="audit-list">
-        <li><div class="ix">1</div><div><div class="title">Google kann die Seite kaum lesen</div><div class="desc">Eine sogenannte Sitemap und eine robots.txt-Datei fehlen komplett. Das sind die grundlegenden Wegweiser, die Google mitteilen, welche Seiten es überhaupt besuchen und einordnen soll. Ohne sie tastet sich Google blind durch — und zeigt Ihre Seite entsprechend selten.</div></div></li>
-        <li><div class="ix">2</div><div><div class="title">Kein Seitentitel im Hauptbereich</div><div class="desc">Die Seite hat keinen klar ausgezeichneten Haupttitel (H1). Das ist für Google so, als würde ein Artikel ohne Überschrift erscheinen — die Suchmaschine versteht nicht, worum es hier geht. Für einen Sanitärbetrieb in Renningen ist das ein handfester Nachteil gegenüber Mitbewerbern, die das richtig gemacht haben.</div></div></li>
-        <li><div class="ix">3</div><div><div class="title">Bilder sagen Google gar nichts</div><div class="desc">6 von 9 Bildern auf der Seite haben keine Beschriftung, die Google lesen kann. Bilder sind für Suchmaschinen unsichtbar — es sei denn, sie bekommen einen beschreibenden Text mitgeliefert. Ohne das verschenken Sie Suchpotenzial, das Sanitärbetriebe mit gut beschrifteten Bildern nutzen.</div></div></li>
-        <li><div class="ix">4</div><div><div class="title">Seite lädt zu langsam</div><div class="desc">Der erste sichtbare Inhalt braucht über 6 Sekunden, bis er vollständig erscheint. Das ist zu lang — ein Großteil der Besucher ist bis dahin schon wieder weg. Gerade auf dem Handy, wenn jemand schnell einen Sanitärbetrieb in der Nähe sucht, entscheidet die Ladezeit oft darüber, ob jemand anruft oder eben bei der nächsten Seite landet.</div></div></li>
-        <li><div class="ix">5</div><div><div class="title">Vorschau beim Teilen fehlt</div><div class="desc">Wenn jemand Ihre Seite in WhatsApp oder Facebook teilt, erscheint kein Vorschau-Bild und kein vernünftiger Beschreibungstext — nur ein leerer Link. Das wirkt unpräsent und führt dazu, dass Weiterempfehlungen optisch verpuffen. Gerade im Handwerk läuft viel über Empfehlung — das sollte funktionieren.</div></div></li>
+        <li><div class="ix">1</div><div><div class="title">Google findet Ihre Seite kaum</div><div class="desc">Zwei Dateien fehlen, die Google erwartet: eine Wegbeschreibung durch Ihre Seite (Sitemap) und eine Zugangsregel (robots.txt). Ohne diese beiden Dinge tastet sich Google durch Ihre Seite wie im Dunkeln — und indexiert sie unvollständig oder gar nicht. Das kostet Sie Sichtbarkeit bei genau den Leuten, die gerade einen Sanitärbetrieb in Renningen suchen.</div></div></li>
+        <li><div class="ix">2</div><div><div class="title">Kein Seitentitel für Google vorhanden</div><div class="desc">Auf Ihrer gesamten Seite gibt es keinen sogenannten Haupttitel (H1). Das ist die eine Überschrift, die Google als stärkstes Signal wertet: Wer seid ihr, was macht ihr, wo seid ihr. Fehlt sie, kann Google Ihre Seite keinem Suchbegriff richtig zuordnen. Wer in Renningen 'Sanitär Notdienst' oder 'Heizung Renningen' sucht, findet Sie so deutlich seltener.</div></div></li>
+        <li><div class="ix">3</div><div><div class="title">Seite lädt viel zu langsam</div><div class="desc">Der Hauptinhalt Ihrer Seite braucht über sechs Sekunden, bis er sichtbar ist. Auf dem Handy bedeutet das: Die meisten Besucher sind weg, bevor überhaupt etwas geladen hat. Kein Caching, kein Verteilerserver (CDN) — die Seite schöpft ihre Möglichkeiten für schnelles Laden nicht ansatzweise aus. Jede Sekunde Wartezeit kostet messbar Anfragen.</div></div></li>
+        <li><div class="ix">4</div><div><div class="title">Bilder ohne Beschriftung — für Google unsichtbar</div><div class="desc">Sechs von neun Bildern auf Ihrer Seite haben keinen beschreibenden Text hinterlegt. Google kann Bilder nicht sehen — es liest nur den Text dahinter. Ohne diese Beschriftung weiß Google nicht, was auf den Fotos zu sehen ist, und kann sie nicht in Suchergebnissen einsetzen. Außerdem: Für Menschen, die Bilder nicht laden können, bleibt die Seite stumm.</div></div></li>
+        <li><div class="ix">5</div><div><div class="title">Vorschau beim Teilen per WhatsApp fehlt</div><div class="desc">Wenn jemand Ihre Seite in WhatsApp oder Facebook teilt, erscheint kein Bild und kein sinnvoller Titel — nur ein kahler Link. Das wirkt unpflegiert und kostet Vertrauen, bevor jemand überhaupt auf Ihre Seite geklickt hat. Die technischen Einstellungen dafür (Vorschau-Bilder beim Teilen) sind auf Ihrer Seite schlicht nicht hinterlegt.</div></div></li>
       </ol>
     </div>
     <div class="scorecards">
@@ -716,6 +735,43 @@ footer a { color: rgba(255,255,255,.7); }
   </div>
 </section>
 
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Technische Grundlage</div>
+      <h2>Hosting, Domain und E-Mail —<br>alles aus <em>einer Hand</em>.</h2>
+      <p class="lead">Eine Seite braucht einen Platz, auf dem sie liegt. Wir hosten in einem zertifizierten Rechenzentrum in Deutschland — Ihre Daten und die Ihrer Kunden verlassen das Land nicht. Das ist kein Nebensatz, sondern genau der Punkt, an dem viele Datenschutzprobleme entstehen.</p>
+    </div>
+    <div class="hosting-wrap">
+      <div class="hosting-karte">
+        <div class="hosting-kopf">
+          <div class="label">Komplettpaket</div>
+          <h4>Hosting &amp; E-Mail</h4>
+          <div class="price">120&nbsp;€</div>
+          <div class="price-sub">netto / Jahr</div>
+        </div>
+        <ul class="hosting-liste">
+          <li><span class="check">✓</span> <strong>10 GB</strong> Speicherplatz</li>
+          <li><span class="check">✓</span> Bis zu <strong>10 E-Mail-Postfächer</strong> mit Ihrem Namen</li>
+          <li><span class="check">✓</span> <strong>1 SSL-Zertifikat</strong> — das Schloss in der Adresszeile</li>
+          <li><span class="check">✓</span> <strong>1 .de-Domain</strong> inklusive</li>
+          <li><span class="check">✓</span> Server in Deutschland, zertifiziertes Rechenzentrum</li>
+          <li><span class="check">✓</span> Einrichtung, Umzug und Wartung übernehmen wir</li>
+        </ul>
+        <div class="hosting-erweiterung">
+          Mehr Platz nötig? Jede weiteren <strong>5 GB</strong> kosten <strong>60&nbsp;€ netto im Jahr</strong>. Die meisten Handwerks- und Gastronomiebetriebe kommen mit 10 GB gut aus — auch mit vielen Bildern.
+        </div>
+      </div>
+      <div class="hosting-hinweis">
+        <h4>Warum das zählt</h4>
+        <p>Wer seine Website bei einem amerikanischen Anbieter liegen hat, schickt bei jedem Besuch Daten über den Atlantik. Das ist rechtlich heikel und muss im Datenschutzhinweis stehen. Bei uns stellt sich die Frage nicht.</p>
+        <p>Ihre E-Mail-Adresse lautet dann <em>info@ihrbetrieb.de</em> statt einer Freemail-Adresse. Das sehen Ihre Kunden bei jeder Antwort — und es macht einen Unterschied.</p>
+        <p class="hosting-klein">Haben Sie Domain und Postfach schon woanders? Dann holen wir beides um, ohne dass Ihre Adresse ausfällt oder eine E-Mail verloren geht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="container">
     <div class="section-head">
@@ -730,7 +786,7 @@ footer a { color: rgba(255,255,255,.7); }
         <div class="roi-card"><div class="label">Ø Kundenwert / Jahr</div><div class="num"><span class="acc">750 €</span></div><div class="detail">Annahme für Sanitär-Stammkundschaft</div></div>
         <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">8 – 18 k €</span></div><div class="detail">konservativ kalkuliert · keine Garantie</div></div>
       </div>
-      <p class="roi-disclaimer">Annahmen: Marktdaten Renningen und Umgebung (Leonberg, Rutesheim), lokale Konkurrenz mittelhoch, Ø Auftragsvolumen Sanitär ~400–800 €. Ich hab mir mal angeschaut, was realistisch ist — keine Garantie, sondern eine ehrliche Größenordnung. Wer in diesem Bereich mit oben dabei ist, kann auf 3–6 zusätzliche Anfragen pro Monat kommen. Ob und wie schnell das eintritt, hängt vom Wettbewerb und der Umsetzung ab.</p>
+      <p class="roi-disclaimer">Annahmen: Marktdaten Renningen und Umgebung (Leonberg, Rutesheim), lokale Konkurrenz mittelhoch, Sanitärbranche mit saisonalen Nachfragespitzen. Ich hab mir angeschaut, was realistisch drin ist — keine Garantie, sondern eine Größenordnung auf Basis dessen, was ich vor Ort an Suchvolumen und Mitbewerber-Stärke einschätzen kann.</p>
     </div>
   </div>
 </section>
@@ -827,7 +883,7 @@ footer a { color: rgba(255,255,255,.7); }
       <div class="roi-grid">
         <div class="roi-card"><div class="label">Anfragen / Monat</div><div class="num">+<span class="acc">6–15</span></div><div class="detail">statt 3–8 nur mit der Seite</div></div>
         <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">14 – 32 k €</span></div><div class="detail">brutto, vor Betreuungskosten</div></div>
-        <div class="roi-card"><div class="label">Laufende Betreuung / Jahr</div><div class="num">−<span class="acc">6.828 €</span></div><div class="detail">SEO 320 € + Social 249 € im Monat, netto</div></div>
+        <div class="roi-card"><div class="label">Laufende Betreuung / Jahr</div><div class="num">−<span class="acc">6.948 €</span></div><div class="detail">SEO 320 € + Social 249 € im Monat, dazu 120 € Hosting im Jahr</div></div>
         <div class="roi-card"><div class="label">Bleibt unterm Strich</div><div class="num">~<span class="acc">7 – 25 k €</span></div><div class="detail">nach Abzug der Betreuung</div></div>
       </div>
       <p class="roi-disclaimer">Ehrlich dazu: Das stellt sich nicht im ersten Monat ein. Suchmaschinen brauchen drei bis sechs Monate, bis Arbeit sichtbar wird, und Social lebt davon, dass es dauerhaft läuft. Die Zahlen oben beschreiben ein volles Jahr, nicht den Start. Beide Pakete sind monatlich kündbar — wenn nichts passiert, hören wir auf.</p>
