@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
+<base href="/schreinerei-thomas-schmid/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Relaunch-Angebot für Schreinerei Thomas Schmid — präsentiert von WebEmotions</title>
@@ -363,6 +364,25 @@ footer a { color: rgba(255,255,255,.7); }
   .pricing-header { margin-bottom: var(--space-4); padding-bottom: var(--space-4); }
   .pricing-price { font-size: 2.2rem; }
 }
+
+/* Hosting */
+.hosting-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-8); margin-top: var(--space-12); align-items: start; }
+@media (max-width: 900px) { .hosting-wrap { grid-template-columns: 1fr; gap: var(--space-6); } }
+.hosting-karte { background: white; border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-lg); padding: var(--space-8); }
+.hosting-kopf { padding-bottom: var(--space-5); margin-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
+.hosting-kopf .label { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-text-muted); }
+.hosting-kopf h4 { font-family: 'Fraunces', serif; font-size: 1.4rem; margin: var(--space-2) 0 var(--space-4); }
+.hosting-kopf .price { font-size: 2.4rem; font-weight: 700; line-height: 1; }
+.hosting-kopf .price-sub { color: var(--color-text-muted); font-size: .9rem; margin-top: var(--space-1); }
+.hosting-liste { list-style: none; padding: 0; margin: 0; }
+.hosting-liste li { display: flex; gap: var(--space-3); padding: var(--space-2) 0; font-size: .95rem; line-height: 1.5; }
+.hosting-erweiterung { margin-top: var(--space-5); padding-top: var(--space-5); border-top: 1px dashed var(--color-border);
+  font-size: .9rem; color: var(--color-text-muted); line-height: 1.6; }
+.hosting-hinweis { padding: var(--space-6) 0; }
+.hosting-hinweis h4 { font-family: 'Fraunces', serif; font-size: 1.15rem; margin: 0 0 var(--space-4); }
+.hosting-hinweis p { font-size: .95rem; line-height: 1.75; color: var(--color-text-muted); margin: 0 0 var(--space-4); }
+.hosting-klein { font-size: .87rem !important; padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
 </style>
 </head>
 <body>
@@ -383,9 +403,9 @@ footer a { color: rgba(255,255,255,.7); }
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 21.05.2026</div>
-      <h1>Schreinerei Thomas Schmid.<br>Stand heute: <em>35 von 100 Punkten.</em><br>Die Handwerksqualität ist da —<br>digital kommt sie nicht an.</h1>
-      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Mir ist sofort aufgefallen: wer in Ludwigsburg einen Schreiner sucht, wird Sie so kaum finden — und wenn doch, überzeugt die Seite nicht.</p>
+      <div class="eyebrow" style="color: var(--color-accent);">Webdesign-Audit · Stand 13.10.2026</div>
+      <h1>Schreinerei Thomas Schmid.<br>Handwerk mit Herz — <em>das Google nicht sieht</em>.</h1>
+      <p class="hero-sub">Ich habe Ihre Seite live angeschaut. Was mich sofort gestoppt hat: Die Seite lädt quälend langsam, und Google fehlen die wichtigsten Signale, um Sie in Ludwigsburg überhaupt zu finden.</p>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="#pricing">Investition ansehen <span class="arrow">&rarr;</span></a>
         <a class="btn btn-ghost btn-lg" href="https://wa.me/491796152161?text=Hallo%20Patrick%2C%20ich%20melde%20mich%20wegen%20dem%20Angebot%20f%C3%BCr%20Schreinerei%20Thomas%20Schmid.%20K%C3%B6nnen%20wir%20kurz%20telefonieren%3F" target="_blank" rel="noopener">
@@ -406,6 +426,8 @@ footer a { color: rgba(255,255,255,.7); }
   </div>
 </header>
 
+
+
 <section class="tinted">
   <div class="container">
     <div class="section-head">
@@ -420,7 +442,7 @@ footer a { color: rgba(255,255,255,.7); }
           <div class="name">Patrick Rupp · WebEmotions</div>
         </div>
       </div>
-      <p>Beim Reinschauen ist mir als erstes die Ladezeit aufgefallen. Über 14 Sekunden bis der Hauptinhalt erscheint — das ist kein Ausreißer, das ist Alltag auf Ihrer Seite. Die meisten Besucher sind da längst weg. Und wer in Ludwigsburg nach einem Schreiner googelt, klickt eben einfach auf den nächsten Treffer.</p><p>Was mich außerdem beschäftigt: Google findet auf Ihrer gesamten Seite keine Hauptüberschrift. Das klingt technisch, hat aber eine klare Konsequenz — Google weiß schlicht nicht, wofür Sie eigentlich stehen. Schreiner? Küchen? Innenausbau? Ludwigsburg? Alles offen. Dazu kommt: kein Impressum auffindbar, kaum Text, keine Bildbeschreibungen. Die Seite hat eine Hülle, aber keinen Inhalt den eine Suchmaschine verwerten kann.</p><p>Ich habe die größten Baustellen weiter unten einzeln aufgelistet — schauen Sie sich das in Ruhe an. Wenn etwas unklar ist, rufen Sie einfach an oder schreiben mir kurz via WhatsApp. Ich erkläre das gerne ohne Fachbegriffe.</p>
+      <p>Beim Reinschauen auf schreiner-schmid.com ist mir eines sofort aufgefallen: Es gibt offensichtlich echtes Handwerk dahinter — aber die Seite zeigt es kaum. 30 Bilder, kein einziger beschreibender Text dazu. Keine Hauptüberschrift, die Google sagen würde, worum es hier geht. Und eine Ladezeit von über 14 Sekunden — das ist kein kleines Problem, das ist ein Türschließer.</p><p>Ehrlich gesagt ist das, was da technisch steht, eine dünne Hülle: 184 Wörter Gesamttext, ein Title der zu kurz ist, keine Meta-Beschreibung die jemanden zum Klicken bringt, kein Impressum auffindbar. Wer in Ludwigsburg nach einem Schreiner sucht, wird Sie so gut wie nie finden — und wenn doch, springt er nach drei Sekunden Ladezeit wieder ab. Das kostet Sie Anfragen, jeden Monat.</p><p>Weiter unten habe ich aufgeschlüsselt, welche fünf Punkte am meisten bremsen und was dahintersteckt. Wenn Ihnen beim Lesen etwas unklar ist, rufen Sie einfach an oder schreiben mir kurz via WhatsApp — ich erkläre das gerne ohne Fachchinesisch.</p>
       <p class="sig">— Patrick</p>
     </div>
   </div>
@@ -548,11 +570,11 @@ footer a { color: rgba(255,255,255,.7); }
         <img src="https://image.thum.io/get/width/1200/crop/900/png/https://www.schreiner-schmid.com/" alt="Aktuelle Website schreiner-schmid.com">
       </div>
       <ol class="audit-list">
-        <li><div class="ix">1</div><div><div class="title">Seite lädt viel zu langsam</div><div class="desc">14 Sekunden bis Ihre Seite vollständig sichtbar ist — das ist etwa fünfmal so lang wie Besucher bereit sind zu warten. Die meisten sind weg, bevor sie auch nur eine Leistung von Ihnen gelesen haben. Das kostet direkt Anfragen.</div></div></li>
-        <li><div class="ix">2</div><div><div class="title">Google findet keine Hauptüberschrift</div><div class="desc">Auf Ihrer gesamten Seite gibt es keine erkennbare Hauptüberschrift — das ist für Google wie ein Schild ohne Aufschrift. Die Suchmaschine kann Ihren Kerninhalt nicht einordnen und listet Sie entsprechend weit hinten oder gar nicht. Für Suchanfragen wie 'Schreiner Ludwigsburg' sind Sie damit praktisch unsichtbar.</div></div></li>
-        <li><div class="ix">3</div><div><div class="title">SEO-Grundlagen fehlen fast vollständig</div><div class="desc">Der Seitentitel ist zu kurz, eine Beschreibung für die Google-Vorschau fehlt komplett. Was Besucher in den Suchergebnissen sehen, entscheidet ob sie klicken oder nicht — im Moment gibt es da nichts Überzeugendes. Das ist einer der einfachsten Hebel, der hier brachliegt.</div></div></li>
-        <li><div class="ix">4</div><div><div class="title">Alle 30 Bilder ohne Beschreibung</div><div class="desc">Kein einziges Ihrer Bilder hat einen erklärenden Text hinterlegt. Google kann Bilder nicht sehen, nur lesen — ohne Beschreibung sind das für die Suchmaschine leere Flächen. Dazu verlieren Sie jeden Besucher, der auf Bilder-Suche nach einem Schreiner im Raum Ludwigsburg sucht.</div></div></li>
-        <li><div class="ix">5</div><div><div class="title">Kein Impressum auffindbar</div><div class="desc">Ein Impressum ist in Deutschland gesetzlich Pflicht — wer es weglässt, riskiert Abmahnungen. Aber es geht auch ums Vertrauen: Wer einen Schreiner für Küche oder Innenausbau beauftragt, will wissen mit wem er es zu tun hat. Eine Seite ohne Impressum wirkt schnell unseriös, auch wenn das gar nicht Ihre Absicht ist.</div></div></li>
+        <li><div class="ix">1</div><div><div class="title">Seite lädt viel zu langsam</div><div class="desc">Über 14 Sekunden bis Ihre Seite vollständig sichtbar ist — auf dem Handy noch länger. Wer in Ludwigsburg schnell einen Schreiner sucht, wartet nicht. Die meisten Besucher sind weg, bevor sie Ihre Arbeit überhaupt gesehen haben.</div></div></li>
+        <li><div class="ix">2</div><div><div class="title">Google weiß nicht, wofür Sie stehen</div><div class="desc">Es gibt keine Hauptüberschrift auf der Seite — das ist für Google das wichtigste Signal, um zu verstehen was Sie anbieten und wo. Ohne dieses Signal tauchen Sie bei Suchen wie 'Schreiner Ludwigsburg' kaum auf. Das ist der größte Einzelhebel auf Ihrer Seite.</div></div></li>
+        <li><div class="ix">3</div><div><div class="title">Seitentitel und Beschreibung viel zu knapp</div><div class="desc">Der Text, den Google in den Suchergebnissen anzeigt, ist bei Ihnen zu kurz und nichtssagend. Kein Standort, kein Leistungsversprechen, kein Grund zu klicken. Selbst wenn jemand Sie findet, fällt der Klick meist auf den Mitbewerber daneben.</div></div></li>
+        <li><div class="ix">4</div><div><div class="title">Alle 30 Bilder ohne Beschriftung</div><div class="desc">Jedes einzelne Bild auf Ihrer Seite hat keinen erklärenden Text hinterlegt. Google kann Bilder nicht sehen — es liest den Text dahinter. Das bedeutet: Ihre gesamte Bildergalerie bringt Ihnen derzeit null Punkte bei der Suche. Außerdem ein Problem für Menschen mit Seheinschränkungen.</div></div></li>
+        <li><div class="ix">5</div><div><div class="title">Kein Impressum auffindbar</div><div class="desc">Ein Impressum ist in Deutschland gesetzlich Pflicht. Fehlt es oder ist es nicht klar erreichbar, drohen Abmahnungen — und Besucher, die Ihnen einen Auftrag geben wollen, zweifeln an der Seriosität. Das ist ein vermeidbares Risiko.</div></div></li>
       </ol>
     </div>
     <div class="scorecards">
@@ -700,6 +722,110 @@ footer a { color: rgba(255,255,255,.7); }
 <section class="tinted">
   <div class="container">
     <div class="section-head">
+      <div class="eyebrow">Technische Grundlage</div>
+      <h2>Hosting, Domain und E-Mail —<br>alles aus <em>einer Hand</em>.</h2>
+      <p class="lead">Eine Seite braucht einen Platz, auf dem sie liegt. Wir hosten in einem zertifizierten Rechenzentrum in Deutschland — Ihre Daten und die Ihrer Kunden verlassen das Land nicht. Das ist kein Nebensatz, sondern genau der Punkt, an dem viele Datenschutzprobleme entstehen.</p>
+    </div>
+    <div class="hosting-wrap">
+      <div class="hosting-karte">
+        <div class="hosting-kopf">
+          <div class="label">Komplettpaket</div>
+          <h4>Hosting &amp; E-Mail</h4>
+          <div class="price">120&nbsp;€</div>
+          <div class="price-sub">netto / Jahr</div>
+        </div>
+        <ul class="hosting-liste">
+          <li><span class="check">✓</span> <strong>10 GB</strong> Speicherplatz</li>
+          <li><span class="check">✓</span> Bis zu <strong>10 E-Mail-Postfächer</strong> mit Ihrem Namen</li>
+          <li><span class="check">✓</span> <strong>1 SSL-Zertifikat</strong> — das Schloss in der Adresszeile</li>
+          <li><span class="check">✓</span> <strong>1 .de-Domain</strong> inklusive</li>
+          <li><span class="check">✓</span> Server in Deutschland, zertifiziertes Rechenzentrum</li>
+          <li><span class="check">✓</span> Einrichtung, Umzug und Wartung übernehmen wir</li>
+        </ul>
+        <div class="hosting-erweiterung">
+          Mehr Platz nötig? Jede weiteren <strong>5 GB</strong> kosten <strong>60&nbsp;€ netto im Jahr</strong>. Die meisten Handwerks- und Gastronomiebetriebe kommen mit 10 GB gut aus — auch mit vielen Bildern.
+        </div>
+      </div>
+      <div class="hosting-hinweis">
+        <h4>Warum das zählt</h4>
+        <p>Wer seine Website bei einem amerikanischen Anbieter liegen hat, schickt bei jedem Besuch Daten über den Atlantik. Das ist rechtlich heikel und muss im Datenschutzhinweis stehen. Bei uns stellt sich die Frage nicht.</p>
+        <p>Ihre E-Mail-Adresse lautet dann <em>info@ihrbetrieb.de</em> statt einer Freemail-Adresse. Das sehen Ihre Kunden bei jeder Antwort — und es macht einen Unterschied.</p>
+        <p class="hosting-klein">Haben Sie Domain und Postfach schon woanders? Dann holen wir beides um, ohne dass Ihre Adresse ausfällt oder eine E-Mail verloren geht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Was realistisch ist</div>
+      <h2>Was <em>allein die neue Seite</em><br>typischerweise bringt.</h2>
+      <p class="lead">Ich hab mir mal angeschaut, was bei einem Betrieb wie Ihrem in Ludwigsburg und Umgebung realistisch wäre. Diese Zahlen gelten für die Webseite allein — ohne laufende Betreuung. Kein Versprechen, eine Spanne auf Basis vergleichbarer Projekte.</p>
+    </div>
+    <div class="roi">
+      <div class="roi-grid">
+        <div class="roi-card"><div class="label">Anfragen / Monat</div><div class="num">+<span class="acc">5–10</span></div><div class="detail">durch lokale Sichtbarkeit + klaren Anfrage-Pfad</div></div>
+        <div class="roi-card"><div class="label">Conv-Rate Besucher → Anfrage</div><div class="num">~<span class="acc">30 %</span></div><div class="detail">heute geschätzt unter 5 % durch fehlende Anfrage-Knöpfe</div></div>
+        <div class="roi-card"><div class="label">Ø Kundenwert / Jahr</div><div class="num"><span class="acc">750 €</span></div><div class="detail">Annahme für Schreiner-Stammkundschaft</div></div>
+        <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">12 – 24 k €</span></div><div class="detail">konservativ kalkuliert · keine Garantie</div></div>
+      </div>
+      <p class="roi-disclaimer">Annahmen: Marktdaten Ludwigsburg und Umgebung, lokale Konkurrenz mittelhoch, durchschnittlicher Auftragswert im Schreinerhandwerk zwischen 1.500 und 4.000 €. Ich hab mir angeschaut, was realistisch ist — keine Garantie, sondern eine ehrliche Größenordnung. Wer mit oben dabei ist bei lokalen Suchanfragen, kann hier spürbar mehr Anfragen erwarten.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Plus: Laufende Suchmaschinen-Betreuung</div>
+      <h2>Eine neue Seite ist der Anfang —<br>gefunden werden ist <em>Arbeit</em>.</h2>
+      <p class="lead">Die Technik stimmt nach dem Relaunch. Aber Google schaut jeden Monat neu hin, und Ihre Mitbewerber schlafen nicht. Wer dauerhaft oben stehen will, muss dranbleiben. Das übernehmen wir — Sie müssen sich um nichts kümmern.</p>
+    </div>
+    <div class="social-pkgs">
+      <div class="social-pkg">
+        <div class="label">Grundlage</div><h4>Sichtbar bleiben</h4>
+        <div class="price">120&nbsp;€</div><div class="price-sub">netto / Monat</div>
+        <ul>
+          <li>Google-Unternehmensprofil gepflegt — Fotos, Zeiten, Beiträge</li>
+          <li>10 Suchbegriffe im Blick behalten</li>
+          <li>Technische Überwachung: Erreichbarkeit &amp; Ladezeit</li>
+          <li>Monatsbericht, verständlich geschrieben</li>
+        </ul>
+      </div>
+      <div class="social-pkg featured">
+        <div class="ribbon">Empfohlen</div>
+        <div class="label">Aufbau</div><h4>Nach vorne arbeiten</h4>
+        <div class="price">320&nbsp;€</div><div class="price-sub">netto / Monat</div>
+        <ul>
+          <li>Alles aus <em>Grundlage</em></li>
+          <li>25 Suchbegriffe, auch die Ihrer Mitbewerber</li>
+          <li>Jeden Monat eine neue Seite oder ein Ratgeber-Beitrag</li>
+          <li>Einträge in Branchenbüchern und Kartendiensten gepflegt</li>
+          <li>Bewertungen: Vorlagen und Erinnerungen für Ihre Kunden</li>
+        </ul>
+      </div>
+      <div class="social-pkg">
+        <div class="label">Vorsprung</div><h4>Abstand ausbauen</h4>
+        <div class="price">520&nbsp;€</div><div class="price-sub">netto / Monat</div>
+        <ul>
+          <li>Alles aus <em>Aufbau</em></li>
+          <li>50 Suchbegriffe samt Beobachtung der Konkurrenz</li>
+          <li>Zwei Beiträge im Monat statt einem</li>
+          <li>Sichtbarkeit in ChatGPT, Gemini &amp; Co. — dort suchen immer mehr</li>
+          <li>Quartalsgespräch mit konkretem Maßnahmenplan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bundle-note">
+      <strong>Ehrlich gesagt:</strong> Die ersten Ergebnisse sehen Sie nach etwa drei Monaten, spürbar wird es nach sechs. Wer Ihnen nach vier Wochen Platz&nbsp;1 verspricht, verkauft Ihnen etwas. Kündbar ist das Ganze monatlich — wenn es nichts bringt, hören wir auf.
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="container">
+    <div class="section-head">
       <div class="eyebrow">Plus: Social Media</div>
       <h2>Wir übernehmen das komplett —<br>Sie haben keinen Stress damit.</h2>
       <p class="lead">Sie schicken uns ab und zu ein paar Fotos vom letzten Projekt. Wir machen den Rest: Posts schreiben, Bilder zuschneiden, posten, antworten.</p>
@@ -728,21 +854,23 @@ footer a { color: rgba(255,255,255,.7); }
   </div>
 </section>
 
+
+
 <section>
   <div class="container">
     <div class="section-head">
-      <div class="eyebrow">Was realistisch ist</div>
-      <h2>Was eine neue Seite<br>typischerweise <em>bringt</em>.</h2>
-      <p class="lead">Ich hab mir mal angeschaut, was bei einem Betrieb wie Ihrem im Raum Heilbronn/Ludwigsburg realistisch wäre. Kein Versprechen — eine Range, basierend auf vergleichbaren Projekten.</p>
+      <div class="eyebrow">Alles zusammen</div>
+      <h2>Und wenn Seite, Suchmaschine<br>und Social <em>zusammenarbeiten</em>?</h2>
+      <p class="lead">Die Zahlen weiter oben gelten für die Webseite allein. Wer zusätzlich laufend betreut wird, erreicht mehr — weil die Seite nicht nur gut ist, sondern auch gefunden wird und im Gespräch bleibt. Hier die zweite Rechnung, genauso konservativ.</p>
     </div>
     <div class="roi">
       <div class="roi-grid">
-        <div class="roi-card"><div class="label">Anfragen / Monat</div><div class="num">+<span class="acc">5–10</span></div><div class="detail">durch lokale Sichtbarkeit + klaren Anfrage-Pfad</div></div>
-        <div class="roi-card"><div class="label">Conv-Rate Besucher → Anfrage</div><div class="num">~<span class="acc">30 %</span></div><div class="detail">heute geschätzt unter 5 % durch fehlende Anfrage-Knöpfe</div></div>
-        <div class="roi-card"><div class="label">Ø Kundenwert / Jahr</div><div class="num"><span class="acc">750 €</span></div><div class="detail">Annahme für Schreiner-Stammkundschaft</div></div>
-        <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">12 – 24 k €</span></div><div class="detail">konservativ kalkuliert · keine Garantie</div></div>
+        <div class="roi-card"><div class="label">Anfragen / Monat</div><div class="num">+<span class="acc">9–19</span></div><div class="detail">statt 5–10 nur mit der Seite</div></div>
+        <div class="roi-card"><div class="label">Range Mehrumsatz / Jahr</div><div class="num">~<span class="acc">22 – 43 k €</span></div><div class="detail">brutto, vor Betreuungskosten</div></div>
+        <div class="roi-card"><div class="label">Laufende Betreuung / Jahr</div><div class="num">−<span class="acc">6.948 €</span></div><div class="detail">SEO 320 € + Social 249 € im Monat, dazu 120 € Hosting im Jahr</div></div>
+        <div class="roi-card"><div class="label">Bleibt unterm Strich</div><div class="num">~<span class="acc">15 – 36 k €</span></div><div class="detail">nach Abzug der Betreuung</div></div>
       </div>
-      <p class="roi-disclaimer">Annahmen: Suchnachfrage Raum Ludwigsburg/Heilbronn, lokale Konkurrenz unter Schreinern mittelhoch, durchschnittlicher Auftragswert im Schreinerhandwerk konservativ angesetzt. Ich hab mir angeschaut was realistisch ist — keine Garantie, aber eine ehrliche Größenordnung. Wer mit oben dabei ist, wenn jemand 'Schreiner Ludwigsburg' sucht, holt sich einen messbaren Anteil dieser Anfragen.</p>
+      <p class="roi-disclaimer">Ehrlich dazu: Das stellt sich nicht im ersten Monat ein. Suchmaschinen brauchen drei bis sechs Monate, bis Arbeit sichtbar wird, und Social lebt davon, dass es dauerhaft läuft. Die Zahlen oben beschreiben ein volles Jahr, nicht den Start. Beide Pakete sind monatlich kündbar — wenn nichts passiert, hören wir auf.</p>
     </div>
   </div>
 </section>
@@ -787,7 +915,7 @@ footer a { color: rgba(255,255,255,.7); }
 
 <footer>
   <div class="signature"><span style="color: var(--color-accent);">●</span> WEB&nbsp;EMOTIONS · PATRICK&nbsp;RUPP</div>
-  <div>Webdesign-Audit erstellt am 21.05.2026 · Daten aus Live-Analyse von schreiner-schmid.com</div>
+  <div>Webdesign-Audit erstellt am 13.10.2026 · Daten aus Live-Analyse von schreiner-schmid.com</div>
   <div style="margin-top: var(--space-3);"><a href="https://www.web-emotions.com">web-emotions.com</a> · <a href="tel:+491796152161">0179 615 2161</a></div>
 </footer>
 
